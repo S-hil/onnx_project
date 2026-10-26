@@ -86,6 +86,7 @@ function setup(getUserMedia) {
     measure,
     classify,
     initialize: async () => {},
+    inferLearned: async (samples) => samples.map(() => [0.1, 0.2, 0.7]),
     infer: async (samples, b, d) =>
       samples.map((s) => 100 * Math.min(1, s.brightness / b, s.detail / d)),
   };

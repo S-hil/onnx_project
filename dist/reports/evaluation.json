@@ -1,0 +1,420 @@
+{
+  "dataset": "synthetic-procedural-grayscale-v1",
+  "warning": "Synthetic held-out scenes only. Not surgical footage, not webcam validation, and not a clinical performance estimate.",
+  "seed": 20261026,
+  "classes": [
+    "clear",
+    "dark",
+    "low_detail"
+  ],
+  "samples": {
+    "train": 324,
+    "validation": 108,
+    "test": 108
+  },
+  "scene_groups": {
+    "train": 108,
+    "validation": 36,
+    "test": 36
+  },
+  "split_unit": "base scene seed; all transformations share the same split",
+  "features": [
+    "mean weighted RGB proxy",
+    "Laplacian variance"
+  ],
+  "preprocessing": "log1p of both metrics, standardized with training-set mean/std only; embedded in ONNX",
+  "training": {
+    "algorithm": "multiclass softmax regression",
+    "epochs": 2000,
+    "learning_rate": 0.08,
+    "selected_l2": 0.0,
+    "trials": [
+      {
+        "l2": 0.0,
+        "validation_macro_f1": 0.9721739130434782
+      },
+      {
+        "l2": 0.01,
+        "validation_macro_f1": 0.9721739130434782
+      },
+      {
+        "l2": 0.1,
+        "validation_macro_f1": 0.962374138844727
+      }
+    ],
+    "history": [
+      {
+        "epoch": 1,
+        "cross_entropy": 1.0986122886651095
+      },
+      {
+        "epoch": 201,
+        "cross_entropy": 0.16305974799327363
+      },
+      {
+        "epoch": 401,
+        "cross_entropy": 0.11088219292943821
+      },
+      {
+        "epoch": 601,
+        "cross_entropy": 0.08906369846535743
+      },
+      {
+        "epoch": 801,
+        "cross_entropy": 0.07646975816529368
+      },
+      {
+        "epoch": 1001,
+        "cross_entropy": 0.06807376080197265
+      },
+      {
+        "epoch": 1201,
+        "cross_entropy": 0.06199262863367198
+      },
+      {
+        "epoch": 1401,
+        "cross_entropy": 0.05734302472525079
+      },
+      {
+        "epoch": 1601,
+        "cross_entropy": 0.05364930459896226
+      },
+      {
+        "epoch": 1801,
+        "cross_entropy": 0.05063006932503848
+      },
+      {
+        "epoch": 2000,
+        "cross_entropy": 0.04811860180826349
+      }
+    ]
+  },
+  "baseline_thresholds": {
+    "brightness": 45,
+    "detail": 60,
+    "policy": "dark priority, else low_detail, else clear"
+  },
+  "learned": {
+    "accuracy": 0.9814814814814815,
+    "macro_f1": 0.9814796950143275,
+    "confusion_matrix": [
+      [
+        36,
+        0,
+        0
+      ],
+      [
+        1,
+        35,
+        0
+      ],
+      [
+        0,
+        1,
+        35
+      ]
+    ],
+    "per_class": [
+      {
+        "label": "clear",
+        "precision": 0.972972972972973,
+        "recall": 1.0,
+        "f1": 0.9863013698630138,
+        "support": 36
+      },
+      {
+        "label": "dark",
+        "precision": 0.9722222222222222,
+        "recall": 0.9722222222222222,
+        "f1": 0.9722222222222222,
+        "support": 36
+      },
+      {
+        "label": "low_detail",
+        "precision": 1.0,
+        "recall": 0.9722222222222222,
+        "f1": 0.9859154929577464,
+        "support": 36
+      }
+    ]
+  },
+  "baseline": {
+    "accuracy": 0.8888888888888888,
+    "macro_f1": 0.8857142857142857,
+    "confusion_matrix": [
+      [
+        36,
+        0,
+        0
+      ],
+      [
+        0,
+        24,
+        12
+      ],
+      [
+        0,
+        0,
+        36
+      ]
+    ],
+    "per_class": [
+      {
+        "label": "clear",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 36
+      },
+      {
+        "label": "dark",
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support": 36
+      },
+      {
+        "label": "low_detail",
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "support": 36
+      }
+    ]
+  },
+  "parity_max_abs_error": 8.208112763918862e-07,
+  "timing": {
+    "provider": "Python ONNX Runtime CPU",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "sample_batch_size": 1,
+    "warmup_runs": 20,
+    "measured_runs": 200,
+    "inference_p50_ms": 0.004749977961182594,
+    "inference_p95_ms": 0.006802362622693178,
+    "excludes": "image generation, preprocessing outside ONNX, browser WASM, acquisition and rendering"
+  },
+  "model_sha256": "8cd47df4690431c74f94279ea4ae82f17f559ffce814cb73623a3fe58666d638",
+  "dataset_manifest_sha256": "013c21718341246eafd0e2bc9319b9d2c75b0ba1afba009f56555bac23ad8539",
+  "errors": [
+    {
+      "scene_id": 4,
+      "truth": "dark",
+      "learned": "clear",
+      "baseline": "low_detail",
+      "brightness": 82.200625,
+      "detail": 45.500545192263665,
+      "probabilities": [
+        0.44661733508110046,
+        0.4118075668811798,
+        0.14157508313655853
+      ]
+    },
+    {
+      "scene_id": 9,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 66.46776041666666,
+      "detail": 58.71634385622258,
+      "probabilities": [
+        0.3526209890842438,
+        0.6245006918907166,
+        0.02287827618420124
+      ]
+    },
+    {
+      "scene_id": 37,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 54.133802083333336,
+      "detail": 17.027488023630927,
+      "probabilities": [
+        0.0059944503009319305,
+        0.9312759637832642,
+        0.06272955238819122
+      ]
+    },
+    {
+      "scene_id": 39,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 56.981319444444445,
+      "detail": 35.44947349049555,
+      "probabilities": [
+        0.05352501571178436,
+        0.9219963550567627,
+        0.024478599429130554
+      ]
+    },
+    {
+      "scene_id": 40,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 56.70159722222222,
+      "detail": 25.519147592573173,
+      "probabilities": [
+        0.02246728725731373,
+        0.9336621761322021,
+        0.04387063533067703
+      ]
+    },
+    {
+      "scene_id": 55,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 60.13220486111111,
+      "detail": 22.206540171030326,
+      "probabilities": [
+        0.021590832620859146,
+        0.8906149864196777,
+        0.087794229388237
+      ]
+    },
+    {
+      "scene_id": 57,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 46.587100694444445,
+      "detail": 21.77455409622806,
+      "probabilities": [
+        0.004672916606068611,
+        0.9830363392829895,
+        0.012290737591683865
+      ]
+    },
+    {
+      "scene_id": 66,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 65.02923611111112,
+      "detail": 30.6153980802304,
+      "probabilities": [
+        0.07542897015810013,
+        0.8376004695892334,
+        0.08697054535150528
+      ]
+    },
+    {
+      "scene_id": 86,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 60.32112847222222,
+      "detail": 24.563847057970076,
+      "probabilities": [
+        0.028685910627245903,
+        0.8960516452789307,
+        0.07526243478059769
+      ]
+    },
+    {
+      "scene_id": 97,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 57.6240625,
+      "detail": 26.32393454290103,
+      "probabilities": [
+        0.02668529935181141,
+        0.9263701438903809,
+        0.046944551169872284
+      ]
+    },
+    {
+      "scene_id": 120,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 78.97145833333333,
+      "detail": 26.016606049680668,
+      "probabilities": [
+        0.10425413399934769,
+        0.5267359018325806,
+        0.3690100312232971
+      ]
+    },
+    {
+      "scene_id": 140,
+      "truth": "dark",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 67.39708333333333,
+      "detail": 25.05527369276291,
+      "probabilities": [
+        0.05282125622034073,
+        0.7877525091171265,
+        0.15942628681659698
+      ]
+    },
+    {
+      "scene_id": 150,
+      "truth": "low_detail",
+      "learned": "dark",
+      "baseline": "low_detail",
+      "brightness": 59.91206597222222,
+      "detail": 8.359144222287032,
+      "probabilities": [
+        0.0013495254097506404,
+        0.6451243758201599,
+        0.35352614521980286
+      ]
+    }
+  ],
+  "tuned_baseline": {
+    "accuracy": 0.8981481481481481,
+    "macro_f1": 0.8985197333161832,
+    "confusion_matrix": [
+      [
+        33,
+        3,
+        0
+      ],
+      [
+        2,
+        31,
+        3
+      ],
+      [
+        0,
+        3,
+        33
+      ]
+    ],
+    "per_class": [
+      {
+        "label": "clear",
+        "precision": 0.9428571428571428,
+        "recall": 0.9166666666666666,
+        "f1": 0.9295774647887323,
+        "support": 36
+      },
+      {
+        "label": "dark",
+        "precision": 0.8378378378378378,
+        "recall": 0.8611111111111112,
+        "f1": 0.8493150684931507,
+        "support": 36
+      },
+      {
+        "label": "low_detail",
+        "precision": 0.9166666666666666,
+        "recall": 0.9166666666666666,
+        "f1": 0.9166666666666666,
+        "support": 36
+      }
+    ]
+  },
+  "tuned_baseline_selection": {
+    "brightness": 65,
+    "detail": 45,
+    "validation_macro_f1": 0.944511513525598,
+    "candidates": 198,
+    "policy": "dark priority; validation selection only"
+  }
+}

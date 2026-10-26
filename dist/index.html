@@ -17,7 +17,7 @@
           <p class="eyebrow">COMPUTER VISION / ONNX BASELINE</p>
           <h1>Camera visibility analysis.</h1>
           <p class="subtitle">
-            A deterministic computer-vision baseline for low-visibility
+            An interpretable baseline and trained classifier for low-visibility
             detection.<br />Live acquisition · frame sampling · interpretable
             metrics · CSV telemetry.
           </p>
@@ -44,6 +44,7 @@
                 <div>
                   <span class="overlay-label">SAMPLED VISIBILITY</span
                   ><strong id="overlayCondition">Awaiting sample</strong
+                  ><span id="overlayLearned">Learned: awaiting sample</span
                   ><span id="overlayMetrics">Brightness — · Detail —</span
                   ><small>Full-frame heuristic · not spatial detection</small>
                 </div>
@@ -194,6 +195,9 @@
         only; it excludes acquisition, decoding, rendering, and scheduling. Live
         sampling uses the selected interval, not camera frame rate.
       </p>
+      <p id="learnedReading" class="learned-reading">
+        Trained model: awaiting input. Synthetic training only.
+      </p>
       <section class="reading-guide">
         <h3>Read the results at a glance</h3>
         <p id="readingHelp" role="status">
@@ -247,6 +251,27 @@
             Flagged samples will appear here. Select a moment to seek to it.
           </p>
         </div>
+      </section>
+      <section class="experiment" id="experiment">
+        <p class="eyebrow">TRAINED MODEL / EXPERIMENT 01</p>
+        <h2>Learning a visibility decision boundary.</h2>
+        <p class="experiment-warning">
+          Synthetic test scenes only. This experiment demonstrates the training
+          and deployment pipeline; its accuracy does not estimate performance on
+          surgical footage or real webcams.
+        </p>
+        <p id="evaluationStatus" role="status">Loading measured evaluation…</p>
+        <div id="evaluationSummary" class="evaluation-summary"></div>
+        <div id="evaluationDetails"></div>
+        <p>
+          <a href="reports/evaluation.json" download
+            >Download complete evaluation JSON</a
+          >
+          ·
+          <a href="reports/dataset-manifest.json" download
+            >Dataset split manifest</a
+          >
+        </p>
       </section>
       <section class="technical">
         <p class="eyebrow">04 / ENGINEERING NOTES</p>
@@ -321,7 +346,7 @@
             </p>
           </article>
           <article>
-            <h3>05 / Evaluation protocol — proposed</h3>
+            <h3>05 / Real-data evaluation — next step</h3>
             <p>
               Create independently annotated clear / dark / blurred / occluded
               clips. Split by source video or capture session to avoid frame
@@ -344,12 +369,11 @@
               There is no temporal smoothing or semantic obstruction detector.
             </p>
             <p>
-              Next experiment: train an obstruction classifier on licensed,
-              labeled research data; export to ONNX; run parity and latency
-              checks against its source model; compare held-out results with
-              this baseline. The current ONNX graph implements threshold
-              normalization and scoring. A learned classifier remains future
-              work.
+              A trained softmax classifier now maps the same two metrics to
+              clear, dark, and low-detail labels. It was trained on procedural
+              grayscale scenes, not surgical images. Next: evaluate with
+              independently annotated real footage and investigate richer
+              features or image-based models.
             </p>
           </article>
         </div>
@@ -380,11 +404,12 @@
       </section>
       <footer>
         Built for exploration. Not validated for clinical decisions or surgical
-        guidance. Deterministic scoring runs in ONNX Runtime Web. No trained
-        surgical model is included.
+        guidance. Rule-based scoring and a synthetic-trained classifier run in
+        ONNX Runtime Web. No surgical model validation is claimed.
       </footer>
     </main>
     <script src="vendor/ort.min.js"></script>
     <script type="module" src="app.js"></script>
+    <script type="module" src="evaluation.mjs"></script>
   </body>
 </html>

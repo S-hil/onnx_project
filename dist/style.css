@@ -631,3 +631,82 @@ a {
   line-height: 1.8;
   color: #49614f;
 }
+.experiment {
+  margin-top: 38px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #cbd8c6;
+  border-radius: 10px;
+}
+.experiment p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #536b5b;
+}
+.experiment-warning {
+  padding: 15px;
+  background: #fff2d9;
+  border-left: 3px solid #bb8939;
+}
+.evaluation-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+.evaluation-summary > div {
+  background: #edf3e8;
+  padding: 18px;
+  border-radius: 7px;
+}
+.evaluation-summary span {
+  display: block;
+  font-size: 11px;
+  color: #647a68;
+}
+.evaluation-summary strong {
+  font-size: 30px;
+  display: block;
+  margin-top: 10px;
+}
+.experiment table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+  margin: 15px 0 25px;
+}
+.experiment th,
+.experiment td {
+  padding: 10px 6px;
+  border-bottom: 1px solid #dae3d5;
+  text-align: left;
+}
+.experiment th {
+  font-weight: 600;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.learned-reading {
+  font-size: 12px;
+  line-height: 1.8;
+  padding: 15px 20px;
+  border: 1px solid #ccd8c7;
+  border-radius: 8px;
+  background: #edf3e6;
+}
+@media (max-width: 600px) {
+  .evaluation-summary {
+    grid-template-columns: 1fr;
+  }
+  .experiment {
+    padding: 15px;
+  }
+  .experiment table {
+    font-size: 10px;
+  }
+}

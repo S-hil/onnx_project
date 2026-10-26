@@ -1,5 +1,5 @@
 import { measure, classify } from "./metrics.mjs";
-import { initialize, infer } from "./inference.mjs";
+import { initialize, infer, inferLearned } from "./inference.mjs";
 import { suggestThresholds } from "./guidance.mjs";
 let runtimeReady = false,
   renderVersion = 0;
@@ -44,7 +44,14 @@ async function render() {
         +$("brightness").value,
         +$("detail").value,
       );
+      const learned = await inferLearned(next);
       if (version !== renderVersion) return;
+      next.forEach((r, i) => {
+        r.probabilities = learned[i];
+        r.prediction = ["clear", "dark", "low_detail"][
+          learned[i].indexOf(Math.max(...learned[i]))
+        ];
+      });
       next.forEach((r, i) => (r.score = Math.round(scores[i])));
       $("runtimeStatus").textContent =
         `ONNX active · WASM / CPU · ${next.length} rows · ${(performance.now() - started).toFixed(2)} ms batch inference · parity passed`;
@@ -288,10 +295,10 @@ $("demo").onclick = () => {
 for (const id of ["brightness", "detail"]) $(id).oninput = render;
 $("export").onclick = () => {
   const csv = [
-    "source,time_seconds,brightness,laplacian_variance,quality_score,brightness_threshold,detail_threshold,compute_ms,flags",
+    "source,time_seconds,brightness,laplacian_variance,quality_score,brightness_threshold,detail_threshold,compute_ms,flags,learned_class,p_clear,p_dark,p_low_detail",
     ...rows.map(
       (r) =>
-        `${sourceMode},${r.time},${r.brightness.toFixed(3)},${r.detail.toFixed(3)},${r.score},${$("brightness").value},${$("detail").value},${r.computeMs?.toFixed(3) ?? ""},${r.flags.join(";")}`,
+        `${sourceMode},${r.time},${r.brightness.toFixed(3)},${r.detail.toFixed(3)},${r.score},${$("brightness").value},${$("detail").value},${r.computeMs?.toFixed(3) ?? ""},${r.flags.join(";")},${r.prediction},${r.probabilities.join(",")}`,
     ),
   ].join("\n");
   const url = URL.createObjectURL(new Blob([csv], { type: "text/csv" })),
@@ -306,6 +313,12 @@ function updateTelemetry() {
   $("readingHelp").textContent = r
     ? `Latest sample: brightness ${r.brightness.toFixed(1)} vs cutoff ${$("brightness").value}; detail ${r.detail.toFixed(1)} vs cutoff ${$("detail").value}. ${r.flags.length ? "Review this sample: " + r.flags.join(" and ") + ". Try better lighting or a more focused, detailed scene; lower cutoffs only if you want to tolerate this condition." : "Both cutoffs are met. This does not rule out an obstruction or overexposure."}`
     : "Start the camera or analyze a video to explain the latest sample.";
+  $("learnedReading").textContent = r?.probabilities
+    ? `Trained model: ${r.prediction.replace("_", " ")}. Softmax: clear ${(r.probabilities[0] * 100).toFixed(1)}%, dark ${(r.probabilities[1] * 100).toFixed(1)}%, low detail ${(r.probabilities[2] * 100).toFixed(1)}%. Synthetic-trained; these outputs are not calibrated confidence or clinical probabilities.`
+    : "Trained model: awaiting input. Synthetic training only.";
+  $("overlayLearned").textContent = r?.prediction
+    ? `Learned: ${r.prediction.replace("_", " ")} · synthetic-trained`
+    : "Learned model: awaiting sample";
   $("videoOverlay").hidden = !live;
   $("videoOverlay").className =
     `video-overlay ${r?.flags.length ? "overlay-warning" : ""}`;
@@ -480,7 +493,7 @@ initialize()
   .then(() => {
     runtimeReady = true;
     $("runtimeStatus").textContent =
-      "ONNX active · WASM / CPU · startup parity passed";
+      "ONNX active · 2 models · WASM / CPU · startup parity passed";
     $("camera").disabled = false;
     $("demo").disabled = false;
     $("file").disabled = false;

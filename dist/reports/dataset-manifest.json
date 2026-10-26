@@ -1,0 +1,3782 @@
+[
+  {
+    "scene_id": 0,
+    "split": "train",
+    "label": 0,
+    "brightness": 138.486875,
+    "detail": 155.78965791346573
+  },
+  {
+    "scene_id": 0,
+    "split": "train",
+    "label": 1,
+    "brightness": 33.7846875,
+    "detail": 10.843596464253345
+  },
+  {
+    "scene_id": 0,
+    "split": "train",
+    "label": 2,
+    "brightness": 138.48743055555556,
+    "detail": 1.9472256052923356
+  },
+  {
+    "scene_id": 1,
+    "split": "train",
+    "label": 0,
+    "brightness": 126.4831423611111,
+    "detail": 183.6651966310362
+  },
+  {
+    "scene_id": 1,
+    "split": "train",
+    "label": 1,
+    "brightness": 49.17866319444445,
+    "detail": 29.090010831904237
+  },
+  {
+    "scene_id": 1,
+    "split": "train",
+    "label": 2,
+    "brightness": 126.48291666666667,
+    "detail": 2.2471910099875205
+  },
+  {
+    "scene_id": 2,
+    "split": "validation",
+    "label": 0,
+    "brightness": 93.52336805555555,
+    "detail": 130.62973736369725
+  },
+  {
+    "scene_id": 2,
+    "split": "validation",
+    "label": 1,
+    "brightness": 41.66689236111111,
+    "detail": 27.282505724846015
+  },
+  {
+    "scene_id": 2,
+    "split": "validation",
+    "label": 2,
+    "brightness": 93.52204861111112,
+    "detail": 2.092749629001484
+  },
+  {
+    "scene_id": 3,
+    "split": "train",
+    "label": 0,
+    "brightness": 70.20090277777778,
+    "detail": 137.66615175081122
+  },
+  {
+    "scene_id": 3,
+    "split": "train",
+    "label": 1,
+    "brightness": 29.85175347222222,
+    "detail": 26.242332357449598
+  },
+  {
+    "scene_id": 3,
+    "split": "train",
+    "label": 2,
+    "brightness": 70.20128472222223,
+    "detail": 4.978429016059217
+  },
+  {
+    "scene_id": 4,
+    "split": "test",
+    "label": 0,
+    "brightness": 179.48743055555556,
+    "detail": 210.55404467770393
+  },
+  {
+    "scene_id": 4,
+    "split": "test",
+    "label": 1,
+    "brightness": 82.200625,
+    "detail": 45.500545192263665
+  },
+  {
+    "scene_id": 4,
+    "split": "test",
+    "label": 2,
+    "brightness": 179.48680555555555,
+    "detail": 3.6073068429324286
+  },
+  {
+    "scene_id": 5,
+    "split": "validation",
+    "label": 0,
+    "brightness": 160.83203125,
+    "detail": 193.8431979717774
+  },
+  {
+    "scene_id": 5,
+    "split": "validation",
+    "label": 1,
+    "brightness": 46.17427083333333,
+    "detail": 17.490322738771468
+  },
+  {
+    "scene_id": 5,
+    "split": "validation",
+    "label": 2,
+    "brightness": 160.82899305555554,
+    "detail": 3.853047811279416
+  },
+  {
+    "scene_id": 6,
+    "split": "train",
+    "label": 0,
+    "brightness": 129.19203125,
+    "detail": 230.46166272357382
+  },
+  {
+    "scene_id": 6,
+    "split": "train",
+    "label": 1,
+    "brightness": 47.463177083333335,
+    "detail": 32.57734299774411
+  },
+  {
+    "scene_id": 6,
+    "split": "train",
+    "label": 2,
+    "brightness": 129.1934375,
+    "detail": 14.517823547619667
+  },
+  {
+    "scene_id": 7,
+    "split": "train",
+    "label": 0,
+    "brightness": 138.54107638888888,
+    "detail": 151.39903477183844
+  },
+  {
+    "scene_id": 7,
+    "split": "train",
+    "label": 1,
+    "brightness": 66.17197916666667,
+    "detail": 35.857006551998765
+  },
+  {
+    "scene_id": 7,
+    "split": "train",
+    "label": 2,
+    "brightness": 138.54164930555555,
+    "detail": 25.69560453967922
+  },
+  {
+    "scene_id": 8,
+    "split": "validation",
+    "label": 0,
+    "brightness": 99.90206597222222,
+    "detail": 156.90560721246501
+  },
+  {
+    "scene_id": 8,
+    "split": "validation",
+    "label": 1,
+    "brightness": 36.0834375,
+    "detail": 21.967175453395566
+  },
+  {
+    "scene_id": 8,
+    "split": "validation",
+    "label": 2,
+    "brightness": 99.90310763888888,
+    "detail": 2.094940275669609
+  },
+  {
+    "scene_id": 9,
+    "split": "test",
+    "label": 0,
+    "brightness": 167.6615625,
+    "detail": 364.43775288912576
+  },
+  {
+    "scene_id": 9,
+    "split": "test",
+    "label": 1,
+    "brightness": 66.46776041666666,
+    "detail": 58.71634385622258
+  },
+  {
+    "scene_id": 9,
+    "split": "test",
+    "label": 2,
+    "brightness": 167.66256944444444,
+    "detail": 2.539024821116696
+  },
+  {
+    "scene_id": 10,
+    "split": "train",
+    "label": 0,
+    "brightness": 179.0125,
+    "detail": 213.91998573172998
+  },
+  {
+    "scene_id": 10,
+    "split": "train",
+    "label": 1,
+    "brightness": 23.93857638888889,
+    "detail": 5.461009797346579
+  },
+  {
+    "scene_id": 10,
+    "split": "train",
+    "label": 2,
+    "brightness": 179.01277777777779,
+    "detail": 11.429563169075664
+  },
+  {
+    "scene_id": 11,
+    "split": "train",
+    "label": 0,
+    "brightness": 75.11303819444444,
+    "detail": 97.88816077944179
+  },
+  {
+    "scene_id": 11,
+    "split": "train",
+    "label": 1,
+    "brightness": 33.73125,
+    "detail": 21.021851531507732
+  },
+  {
+    "scene_id": 11,
+    "split": "train",
+    "label": 2,
+    "brightness": 75.11230902777778,
+    "detail": 2.4072150178315637
+  },
+  {
+    "scene_id": 12,
+    "split": "train",
+    "label": 0,
+    "brightness": 93.25803819444444,
+    "detail": 243.21169131303498
+  },
+  {
+    "scene_id": 12,
+    "split": "train",
+    "label": 1,
+    "brightness": 39.44392361111111,
+    "detail": 44.817993614417546
+  },
+  {
+    "scene_id": 12,
+    "split": "train",
+    "label": 2,
+    "brightness": 93.25498263888889,
+    "detail": 2.1910633590299597
+  },
+  {
+    "scene_id": 13,
+    "split": "train",
+    "label": 0,
+    "brightness": 167.43145833333332,
+    "detail": 210.96468346055457
+  },
+  {
+    "scene_id": 13,
+    "split": "train",
+    "label": 1,
+    "brightness": 26.549322916666668,
+    "detail": 6.946328850140279
+  },
+  {
+    "scene_id": 13,
+    "split": "train",
+    "label": 2,
+    "brightness": 167.4328125,
+    "detail": 2.099056551027229
+  },
+  {
+    "scene_id": 14,
+    "split": "train",
+    "label": 0,
+    "brightness": 165.69921875,
+    "detail": 131.8456469354522
+  },
+  {
+    "scene_id": 14,
+    "split": "train",
+    "label": 1,
+    "brightness": 68.73432291666667,
+    "detail": 24.108278496661292
+  },
+  {
+    "scene_id": 14,
+    "split": "train",
+    "label": 2,
+    "brightness": 165.69880208333333,
+    "detail": 1.989117375615391
+  },
+  {
+    "scene_id": 15,
+    "split": "train",
+    "label": 0,
+    "brightness": 146.2421701388889,
+    "detail": 225.00788613668269
+  },
+  {
+    "scene_id": 15,
+    "split": "train",
+    "label": 1,
+    "brightness": 57.96690972222222,
+    "detail": 36.77945527262835
+  },
+  {
+    "scene_id": 15,
+    "split": "train",
+    "label": 2,
+    "brightness": 146.24157986111112,
+    "detail": 1.941168956922175
+  },
+  {
+    "scene_id": 16,
+    "split": "train",
+    "label": 0,
+    "brightness": 132.8818576388889,
+    "detail": 175.15442727617352
+  },
+  {
+    "scene_id": 16,
+    "split": "train",
+    "label": 1,
+    "brightness": 29.260729166666668,
+    "detail": 10.070347025728003
+  },
+  {
+    "scene_id": 16,
+    "split": "train",
+    "label": 2,
+    "brightness": 132.87946180555556,
+    "detail": 6.32681295835366
+  },
+  {
+    "scene_id": 17,
+    "split": "train",
+    "label": 0,
+    "brightness": 163.53401041666666,
+    "detail": 119.53371460265718
+  },
+  {
+    "scene_id": 17,
+    "split": "train",
+    "label": 1,
+    "brightness": 64.97902777777777,
+    "detail": 20.261210298479657
+  },
+  {
+    "scene_id": 17,
+    "split": "train",
+    "label": 2,
+    "brightness": 163.5325173611111,
+    "detail": 4.645448560215746
+  },
+  {
+    "scene_id": 18,
+    "split": "train",
+    "label": 0,
+    "brightness": 109.90340277777777,
+    "detail": 158.0775576557494
+  },
+  {
+    "scene_id": 18,
+    "split": "train",
+    "label": 1,
+    "brightness": 39.77329861111111,
+    "detail": 22.09317209797328
+  },
+  {
+    "scene_id": 18,
+    "split": "train",
+    "label": 2,
+    "brightness": 109.90453125,
+    "detail": 15.947756816650633
+  },
+  {
+    "scene_id": 19,
+    "split": "train",
+    "label": 0,
+    "brightness": 111.64664930555556,
+    "detail": 222.9307619108475
+  },
+  {
+    "scene_id": 19,
+    "split": "train",
+    "label": 1,
+    "brightness": 37.458958333333335,
+    "detail": 26.57225597314839
+  },
+  {
+    "scene_id": 19,
+    "split": "train",
+    "label": 2,
+    "brightness": 111.64602430555556,
+    "detail": 9.985460338745414
+  },
+  {
+    "scene_id": 20,
+    "split": "validation",
+    "label": 0,
+    "brightness": 93.05878472222223,
+    "detail": 83.68785281787711
+  },
+  {
+    "scene_id": 20,
+    "split": "validation",
+    "label": 1,
+    "brightness": 26.95501736111111,
+    "detail": 8.551655417598054
+  },
+  {
+    "scene_id": 20,
+    "split": "validation",
+    "label": 2,
+    "brightness": 93.05854166666667,
+    "detail": 7.285032455375796
+  },
+  {
+    "scene_id": 21,
+    "split": "validation",
+    "label": 0,
+    "brightness": 157.40911458333332,
+    "detail": 108.4730930249188
+  },
+  {
+    "scene_id": 21,
+    "split": "validation",
+    "label": 1,
+    "brightness": 61.36673611111111,
+    "detail": 17.92546456125037
+  },
+  {
+    "scene_id": 21,
+    "split": "validation",
+    "label": 2,
+    "brightness": 157.40744791666665,
+    "detail": 9.395077611637118
+  },
+  {
+    "scene_id": 22,
+    "split": "train",
+    "label": 0,
+    "brightness": 105.39041666666667,
+    "detail": 156.07110498992458
+  },
+  {
+    "scene_id": 22,
+    "split": "train",
+    "label": 1,
+    "brightness": 32.29168402777778,
+    "detail": 16.16064205749419
+  },
+  {
+    "scene_id": 22,
+    "split": "train",
+    "label": 2,
+    "brightness": 105.38852430555555,
+    "detail": 23.399336458521834
+  },
+  {
+    "scene_id": 23,
+    "split": "validation",
+    "label": 0,
+    "brightness": 145.7473784722222,
+    "detail": 155.16279056575408
+  },
+  {
+    "scene_id": 23,
+    "split": "validation",
+    "label": 1,
+    "brightness": 24.43730902777778,
+    "detail": 5.962705678203504
+  },
+  {
+    "scene_id": 23,
+    "split": "validation",
+    "label": 2,
+    "brightness": 145.74560763888888,
+    "detail": 2.1782736049455305
+  },
+  {
+    "scene_id": 24,
+    "split": "train",
+    "label": 0,
+    "brightness": 102.40701388888888,
+    "detail": 106.61774711296911
+  },
+  {
+    "scene_id": 24,
+    "split": "train",
+    "label": 1,
+    "brightness": 23.454131944444445,
+    "detail": 7.170800605187093
+  },
+  {
+    "scene_id": 24,
+    "split": "train",
+    "label": 2,
+    "brightness": 102.40329861111111,
+    "detail": 25.352165425295848
+  },
+  {
+    "scene_id": 25,
+    "split": "train",
+    "label": 0,
+    "brightness": 78.26475694444444,
+    "detail": 166.7282344912443
+  },
+  {
+    "scene_id": 25,
+    "split": "train",
+    "label": 1,
+    "brightness": 17.16642361111111,
+    "detail": 9.627287823869926
+  },
+  {
+    "scene_id": 25,
+    "split": "train",
+    "label": 2,
+    "brightness": 78.26454861111111,
+    "detail": 4.837607739456684
+  },
+  {
+    "scene_id": 26,
+    "split": "train",
+    "label": 0,
+    "brightness": 124.03447916666667,
+    "detail": 160.12887687369349
+  },
+  {
+    "scene_id": 26,
+    "split": "train",
+    "label": 1,
+    "brightness": 22.22859375,
+    "detail": 6.7431451332247105
+  },
+  {
+    "scene_id": 26,
+    "split": "train",
+    "label": 2,
+    "brightness": 124.03265625,
+    "detail": 4.487261957007103
+  },
+  {
+    "scene_id": 27,
+    "split": "test",
+    "label": 0,
+    "brightness": 146.87690972222222,
+    "detail": 84.03393548317192
+  },
+  {
+    "scene_id": 27,
+    "split": "test",
+    "label": 1,
+    "brightness": 21.3375,
+    "detail": 3.375450486962097
+  },
+  {
+    "scene_id": 27,
+    "split": "test",
+    "label": 2,
+    "brightness": 146.87666666666667,
+    "detail": 9.426310580338203
+  },
+  {
+    "scene_id": 28,
+    "split": "train",
+    "label": 0,
+    "brightness": 169.6926215277778,
+    "detail": 295.32843612789094
+  },
+  {
+    "scene_id": 28,
+    "split": "train",
+    "label": 1,
+    "brightness": 49.242413194444445,
+    "detail": 26.388840248634015
+  },
+  {
+    "scene_id": 28,
+    "split": "train",
+    "label": 2,
+    "brightness": 169.6965451388889,
+    "detail": 2.1884317618784457
+  },
+  {
+    "scene_id": 29,
+    "split": "validation",
+    "label": 0,
+    "brightness": 67.4486111111111,
+    "detail": 183.28704125726568
+  },
+  {
+    "scene_id": 29,
+    "split": "validation",
+    "label": 1,
+    "brightness": 16.83267361111111,
+    "detail": 12.960955293507165
+  },
+  {
+    "scene_id": 29,
+    "split": "validation",
+    "label": 2,
+    "brightness": 67.44762152777778,
+    "detail": 1.8975330241001134
+  },
+  {
+    "scene_id": 30,
+    "split": "train",
+    "label": 0,
+    "brightness": 89.96819444444445,
+    "detail": 126.34021449681991
+  },
+  {
+    "scene_id": 30,
+    "split": "train",
+    "label": 1,
+    "brightness": 29.2375,
+    "detail": 14.813952777584642
+  },
+  {
+    "scene_id": 30,
+    "split": "train",
+    "label": 2,
+    "brightness": 89.97189236111112,
+    "detail": 2.4460285489070275
+  },
+  {
+    "scene_id": 31,
+    "split": "train",
+    "label": 0,
+    "brightness": 175.50506944444444,
+    "detail": 115.37098065434205
+  },
+  {
+    "scene_id": 31,
+    "split": "train",
+    "label": 1,
+    "brightness": 76.511875,
+    "detail": 23.31121465401779
+  },
+  {
+    "scene_id": 31,
+    "split": "train",
+    "label": 2,
+    "brightness": 175.50378472222224,
+    "detail": 2.6083315554378235
+  },
+  {
+    "scene_id": 32,
+    "split": "train",
+    "label": 0,
+    "brightness": 80.50796875,
+    "detail": 192.19508363789262
+  },
+  {
+    "scene_id": 32,
+    "split": "train",
+    "label": 1,
+    "brightness": 29.610520833333332,
+    "detail": 27.404808034950133
+  },
+  {
+    "scene_id": 32,
+    "split": "train",
+    "label": 2,
+    "brightness": 80.50850694444445,
+    "detail": 16.231119213787814
+  },
+  {
+    "scene_id": 33,
+    "split": "train",
+    "label": 0,
+    "brightness": 116.68401041666667,
+    "detail": 145.00635440779087
+  },
+  {
+    "scene_id": 33,
+    "split": "train",
+    "label": 1,
+    "brightness": 37.15960069444444,
+    "detail": 16.271091331052904
+  },
+  {
+    "scene_id": 33,
+    "split": "train",
+    "label": 2,
+    "brightness": 116.68465277777777,
+    "detail": 1.848596721717982
+  },
+  {
+    "scene_id": 34,
+    "split": "validation",
+    "label": 0,
+    "brightness": 60.188350694444445,
+    "detail": 282.3744246583563
+  },
+  {
+    "scene_id": 34,
+    "split": "validation",
+    "label": 1,
+    "brightness": 17.340572916666666,
+    "detail": 24.952521564133466
+  },
+  {
+    "scene_id": 34,
+    "split": "validation",
+    "label": 2,
+    "brightness": 60.188975694444444,
+    "detail": 1.7174581223647636
+  },
+  {
+    "scene_id": 35,
+    "split": "train",
+    "label": 0,
+    "brightness": 101.74064236111111,
+    "detail": 131.38711027178363
+  },
+  {
+    "scene_id": 35,
+    "split": "train",
+    "label": 1,
+    "brightness": 46.09673611111111,
+    "detail": 28.26899157072535
+  },
+  {
+    "scene_id": 35,
+    "split": "train",
+    "label": 2,
+    "brightness": 101.74161458333333,
+    "detail": 5.127446324172258
+  },
+  {
+    "scene_id": 36,
+    "split": "train",
+    "label": 0,
+    "brightness": 83.68994791666667,
+    "detail": 85.41449944655902
+  },
+  {
+    "scene_id": 36,
+    "split": "train",
+    "label": 1,
+    "brightness": 17.76407986111111,
+    "detail": 5.420940968857848
+  },
+  {
+    "scene_id": 36,
+    "split": "train",
+    "label": 2,
+    "brightness": 83.69298611111111,
+    "detail": 5.102146159455311
+  },
+  {
+    "scene_id": 37,
+    "split": "test",
+    "label": 0,
+    "brightness": 149.50838541666667,
+    "detail": 118.47810488252429
+  },
+  {
+    "scene_id": 37,
+    "split": "test",
+    "label": 1,
+    "brightness": 54.133802083333336,
+    "detail": 17.027488023630927
+  },
+  {
+    "scene_id": 37,
+    "split": "test",
+    "label": 2,
+    "brightness": 149.5068576388889,
+    "detail": 2.0110944712276084
+  },
+  {
+    "scene_id": 38,
+    "split": "train",
+    "label": 0,
+    "brightness": 119.09427083333334,
+    "detail": 92.25047659359923
+  },
+  {
+    "scene_id": 38,
+    "split": "train",
+    "label": 1,
+    "brightness": 22.0728125,
+    "detail": 4.790544826584739
+  },
+  {
+    "scene_id": 38,
+    "split": "train",
+    "label": 2,
+    "brightness": 119.09348958333334,
+    "detail": 1.8351526927849842
+  },
+  {
+    "scene_id": 39,
+    "split": "test",
+    "label": 0,
+    "brightness": 122.13053819444444,
+    "detail": 156.61500952872595
+  },
+  {
+    "scene_id": 39,
+    "split": "test",
+    "label": 1,
+    "brightness": 56.981319444444445,
+    "detail": 35.44947349049555
+  },
+  {
+    "scene_id": 39,
+    "split": "test",
+    "label": 2,
+    "brightness": 122.13,
+    "detail": 2.060455091512967
+  },
+  {
+    "scene_id": 40,
+    "split": "test",
+    "label": 0,
+    "brightness": 150.41822916666666,
+    "detail": 169.26857557987995
+  },
+  {
+    "scene_id": 40,
+    "split": "test",
+    "label": 1,
+    "brightness": 56.70159722222222,
+    "detail": 25.519147592573173
+  },
+  {
+    "scene_id": 40,
+    "split": "test",
+    "label": 2,
+    "brightness": 150.41625,
+    "detail": 2.598809158758371
+  },
+  {
+    "scene_id": 41,
+    "split": "validation",
+    "label": 0,
+    "brightness": 178.71864583333334,
+    "detail": 204.37210723909914
+  },
+  {
+    "scene_id": 41,
+    "split": "validation",
+    "label": 1,
+    "brightness": 61.681302083333335,
+    "detail": 25.776393512091374
+  },
+  {
+    "scene_id": 41,
+    "split": "validation",
+    "label": 2,
+    "brightness": 178.71819444444444,
+    "detail": 1.4044589689306664
+  },
+  {
+    "scene_id": 42,
+    "split": "test",
+    "label": 0,
+    "brightness": 156.22425347222222,
+    "detail": 225.25843027058608
+  },
+  {
+    "scene_id": 42,
+    "split": "test",
+    "label": 1,
+    "brightness": 36.49861111111111,
+    "detail": 13.854192861318444
+  },
+  {
+    "scene_id": 42,
+    "split": "test",
+    "label": 2,
+    "brightness": 156.2211111111111,
+    "detail": 6.893841311963093
+  },
+  {
+    "scene_id": 43,
+    "split": "test",
+    "label": 0,
+    "brightness": 141.50319444444443,
+    "detail": 204.90258610875668
+  },
+  {
+    "scene_id": 43,
+    "split": "test",
+    "label": 1,
+    "brightness": 21.548784722222223,
+    "detail": 6.379902469154168
+  },
+  {
+    "scene_id": 43,
+    "split": "test",
+    "label": 2,
+    "brightness": 141.50597222222223,
+    "detail": 2.601370776789053
+  },
+  {
+    "scene_id": 44,
+    "split": "train",
+    "label": 0,
+    "brightness": 75.3075,
+    "detail": 116.85774566889246
+  },
+  {
+    "scene_id": 44,
+    "split": "train",
+    "label": 1,
+    "brightness": 20.616475694444443,
+    "detail": 10.264165910564822
+  },
+  {
+    "scene_id": 44,
+    "split": "train",
+    "label": 2,
+    "brightness": 75.30567708333334,
+    "detail": 3.456628394148096
+  },
+  {
+    "scene_id": 45,
+    "split": "train",
+    "label": 0,
+    "brightness": 130.59098958333334,
+    "detail": 202.6306478229143
+  },
+  {
+    "scene_id": 45,
+    "split": "train",
+    "label": 1,
+    "brightness": 45.224444444444444,
+    "detail": 25.724359165921637
+  },
+  {
+    "scene_id": 45,
+    "split": "train",
+    "label": 2,
+    "brightness": 130.58973958333334,
+    "detail": 4.454966832754391
+  },
+  {
+    "scene_id": 46,
+    "split": "train",
+    "label": 0,
+    "brightness": 172.63135416666665,
+    "detail": 151.69268834160619
+  },
+  {
+    "scene_id": 46,
+    "split": "train",
+    "label": 1,
+    "brightness": 68.1734375,
+    "detail": 25.011196276063835
+  },
+  {
+    "scene_id": 46,
+    "split": "train",
+    "label": 2,
+    "brightness": 172.6315972222222,
+    "detail": 8.716910445716518
+  },
+  {
+    "scene_id": 47,
+    "split": "validation",
+    "label": 0,
+    "brightness": 154.92862847222221,
+    "detail": 184.00888618511692
+  },
+  {
+    "scene_id": 47,
+    "split": "validation",
+    "label": 1,
+    "brightness": 56.53243055555556,
+    "detail": 25.936788839611182
+  },
+  {
+    "scene_id": 47,
+    "split": "validation",
+    "label": 2,
+    "brightness": 154.92668402777778,
+    "detail": 1.9168079841413468
+  },
+  {
+    "scene_id": 48,
+    "split": "validation",
+    "label": 0,
+    "brightness": 105.94661458333333,
+    "detail": 208.77691750999537
+  },
+  {
+    "scene_id": 48,
+    "split": "validation",
+    "label": 1,
+    "brightness": 19.074288194444446,
+    "detail": 8.369196312228484
+  },
+  {
+    "scene_id": 48,
+    "split": "validation",
+    "label": 2,
+    "brightness": 105.94414930555556,
+    "detail": 1.977192229495751
+  },
+  {
+    "scene_id": 49,
+    "split": "train",
+    "label": 0,
+    "brightness": 104.16772569444444,
+    "detail": 149.1103631724674
+  },
+  {
+    "scene_id": 49,
+    "split": "train",
+    "label": 1,
+    "brightness": 49.72796875,
+    "detail": 35.30183373991847
+  },
+  {
+    "scene_id": 49,
+    "split": "train",
+    "label": 2,
+    "brightness": 104.16864583333333,
+    "detail": 2.1423573856266374
+  },
+  {
+    "scene_id": 50,
+    "split": "train",
+    "label": 0,
+    "brightness": 156.44677083333335,
+    "detail": 157.33381191163124
+  },
+  {
+    "scene_id": 50,
+    "split": "train",
+    "label": 1,
+    "brightness": 42.31609375,
+    "detail": 13.040434421283539
+  },
+  {
+    "scene_id": 50,
+    "split": "train",
+    "label": 2,
+    "brightness": 156.44635416666668,
+    "detail": 20.521192704242917
+  },
+  {
+    "scene_id": 51,
+    "split": "train",
+    "label": 0,
+    "brightness": 176.61498263888888,
+    "detail": 230.6185596490448
+  },
+  {
+    "scene_id": 51,
+    "split": "train",
+    "label": 1,
+    "brightness": 29.839930555555554,
+    "detail": 8.181594932484192
+  },
+  {
+    "scene_id": 51,
+    "split": "train",
+    "label": 2,
+    "brightness": 176.61399305555557,
+    "detail": 21.0685640337963
+  },
+  {
+    "scene_id": 52,
+    "split": "test",
+    "label": 0,
+    "brightness": 137.20675347222223,
+    "detail": 135.60207253896328
+  },
+  {
+    "scene_id": 52,
+    "split": "test",
+    "label": 1,
+    "brightness": 30.532413194444445,
+    "detail": 8.319422029115879
+  },
+  {
+    "scene_id": 52,
+    "split": "test",
+    "label": 2,
+    "brightness": 137.2057986111111,
+    "detail": 34.100454834135725
+  },
+  {
+    "scene_id": 53,
+    "split": "test",
+    "label": 0,
+    "brightness": 61.702274305555555,
+    "detail": 203.9575802480186
+  },
+  {
+    "scene_id": 53,
+    "split": "test",
+    "label": 1,
+    "brightness": 16.513368055555556,
+    "detail": 16.135944261154293
+  },
+  {
+    "scene_id": 53,
+    "split": "test",
+    "label": 2,
+    "brightness": 61.69838541666667,
+    "detail": 2.240283072263466
+  },
+  {
+    "scene_id": 54,
+    "split": "train",
+    "label": 0,
+    "brightness": 88.18673611111112,
+    "detail": 231.75789675742672
+  },
+  {
+    "scene_id": 54,
+    "split": "train",
+    "label": 1,
+    "brightness": 37.50914930555555,
+    "detail": 43.27337287529752
+  },
+  {
+    "scene_id": 54,
+    "split": "train",
+    "label": 2,
+    "brightness": 88.18625,
+    "detail": 7.530881189833542
+  },
+  {
+    "scene_id": 55,
+    "split": "test",
+    "label": 0,
+    "brightness": 164.47109375,
+    "detail": 155.42733686337414
+  },
+  {
+    "scene_id": 55,
+    "split": "test",
+    "label": 1,
+    "brightness": 60.13220486111111,
+    "detail": 22.206540171030326
+  },
+  {
+    "scene_id": 55,
+    "split": "test",
+    "label": 2,
+    "brightness": 164.47211805555557,
+    "detail": 3.386878935318216
+  },
+  {
+    "scene_id": 56,
+    "split": "train",
+    "label": 0,
+    "brightness": 152.40616319444445,
+    "detail": 142.56314041410502
+  },
+  {
+    "scene_id": 56,
+    "split": "train",
+    "label": 1,
+    "brightness": 33.475572916666664,
+    "detail": 8.44178856586696
+  },
+  {
+    "scene_id": 56,
+    "split": "train",
+    "label": 2,
+    "brightness": 152.40524305555556,
+    "detail": 7.9793827825312915
+  },
+  {
+    "scene_id": 57,
+    "split": "test",
+    "label": 0,
+    "brightness": 145.55765625,
+    "detail": 198.2167538330471
+  },
+  {
+    "scene_id": 57,
+    "split": "test",
+    "label": 1,
+    "brightness": 46.587100694444445,
+    "detail": 21.77455409622806
+  },
+  {
+    "scene_id": 57,
+    "split": "test",
+    "label": 2,
+    "brightness": 145.55743055555556,
+    "detail": 12.496236675165658
+  },
+  {
+    "scene_id": 58,
+    "split": "train",
+    "label": 0,
+    "brightness": 100.81796875,
+    "detail": 143.09303216969406
+  },
+  {
+    "scene_id": 58,
+    "split": "train",
+    "label": 1,
+    "brightness": 20.049253472222222,
+    "detail": 7.309306481875195
+  },
+  {
+    "scene_id": 58,
+    "split": "train",
+    "label": 2,
+    "brightness": 100.81527777777778,
+    "detail": 4.338827606924279
+  },
+  {
+    "scene_id": 59,
+    "split": "validation",
+    "label": 0,
+    "brightness": 132.94557291666666,
+    "detail": 177.80502408577135
+  },
+  {
+    "scene_id": 59,
+    "split": "validation",
+    "label": 1,
+    "brightness": 26.77,
+    "detail": 8.787538640107613
+  },
+  {
+    "scene_id": 59,
+    "split": "validation",
+    "label": 2,
+    "brightness": 132.94875,
+    "detail": 2.3905023930466074
+  },
+  {
+    "scene_id": 60,
+    "split": "train",
+    "label": 0,
+    "brightness": 99.19038194444444,
+    "detail": 328.80257412647
+  },
+  {
+    "scene_id": 60,
+    "split": "train",
+    "label": 1,
+    "brightness": 31.2575,
+    "detail": 34.15016606475397
+  },
+  {
+    "scene_id": 60,
+    "split": "train",
+    "label": 2,
+    "brightness": 99.18977430555556,
+    "detail": 3.631261529885216
+  },
+  {
+    "scene_id": 61,
+    "split": "test",
+    "label": 0,
+    "brightness": 108.58243055555556,
+    "detail": 351.946858717871
+  },
+  {
+    "scene_id": 61,
+    "split": "test",
+    "label": 1,
+    "brightness": 22.24296875,
+    "detail": 16.323351017145246
+  },
+  {
+    "scene_id": 61,
+    "split": "test",
+    "label": 2,
+    "brightness": 108.5832638888889,
+    "detail": 1.7936188055497466
+  },
+  {
+    "scene_id": 62,
+    "split": "train",
+    "label": 0,
+    "brightness": 136.12286458333332,
+    "detail": 202.11917675799955
+  },
+  {
+    "scene_id": 62,
+    "split": "train",
+    "label": 1,
+    "brightness": 28.647152777777777,
+    "detail": 10.571302256613695
+  },
+  {
+    "scene_id": 62,
+    "split": "train",
+    "label": 2,
+    "brightness": 136.12163194444443,
+    "detail": 2.0835983272795993
+  },
+  {
+    "scene_id": 63,
+    "split": "train",
+    "label": 0,
+    "brightness": 129.94960069444446,
+    "detail": 105.6093901401548
+  },
+  {
+    "scene_id": 63,
+    "split": "train",
+    "label": 1,
+    "brightness": 20.486059027777777,
+    "detail": 4.241810027766132
+  },
+  {
+    "scene_id": 63,
+    "split": "train",
+    "label": 2,
+    "brightness": 129.9509375,
+    "detail": 5.895095092528494
+  },
+  {
+    "scene_id": 64,
+    "split": "test",
+    "label": 0,
+    "brightness": 176.80930555555557,
+    "detail": 111.2972854360143
+  },
+  {
+    "scene_id": 64,
+    "split": "test",
+    "label": 1,
+    "brightness": 33.138836805555556,
+    "detail": 5.524537328504868
+  },
+  {
+    "scene_id": 64,
+    "split": "test",
+    "label": 2,
+    "brightness": 176.80942708333333,
+    "detail": 4.119161119797468
+  },
+  {
+    "scene_id": 65,
+    "split": "train",
+    "label": 0,
+    "brightness": 66.9771701388889,
+    "detail": 160.1654169747241
+  },
+  {
+    "scene_id": 65,
+    "split": "train",
+    "label": 1,
+    "brightness": 22.2403125,
+    "detail": 19.070734731730237
+  },
+  {
+    "scene_id": 65,
+    "split": "train",
+    "label": 2,
+    "brightness": 66.9765625,
+    "detail": 2.1218285651201962
+  },
+  {
+    "scene_id": 66,
+    "split": "test",
+    "label": 0,
+    "brightness": 173.30744791666666,
+    "detail": 206.79757434028943
+  },
+  {
+    "scene_id": 66,
+    "split": "test",
+    "label": 1,
+    "brightness": 65.02923611111112,
+    "detail": 30.6153980802304
+  },
+  {
+    "scene_id": 66,
+    "split": "test",
+    "label": 2,
+    "brightness": 173.30753472222221,
+    "detail": 15.669705301203763
+  },
+  {
+    "scene_id": 67,
+    "split": "test",
+    "label": 0,
+    "brightness": 112.11043402777777,
+    "detail": 164.7727368478791
+  },
+  {
+    "scene_id": 67,
+    "split": "test",
+    "label": 1,
+    "brightness": 35.707569444444445,
+    "detail": 18.208094764062892
+  },
+  {
+    "scene_id": 67,
+    "split": "test",
+    "label": 2,
+    "brightness": 112.11121527777777,
+    "detail": 4.12665177397967
+  },
+  {
+    "scene_id": 68,
+    "split": "train",
+    "label": 0,
+    "brightness": 120.90741319444444,
+    "detail": 122.16076474520568
+  },
+  {
+    "scene_id": 68,
+    "split": "train",
+    "label": 1,
+    "brightness": 40.0659375,
+    "detail": 14.947017875786175
+  },
+  {
+    "scene_id": 68,
+    "split": "train",
+    "label": 2,
+    "brightness": 120.90786458333334,
+    "detail": 1.8052414481977528
+  },
+  {
+    "scene_id": 69,
+    "split": "validation",
+    "label": 0,
+    "brightness": 133.16984375,
+    "detail": 228.6149380933063
+  },
+  {
+    "scene_id": 69,
+    "split": "validation",
+    "label": 1,
+    "brightness": 20.876128472222224,
+    "detail": 7.209455101006063
+  },
+  {
+    "scene_id": 69,
+    "split": "validation",
+    "label": 2,
+    "brightness": 133.17019097222223,
+    "detail": 35.30762780413298
+  },
+  {
+    "scene_id": 70,
+    "split": "train",
+    "label": 0,
+    "brightness": 107.16336805555555,
+    "detail": 95.0232659628038
+  },
+  {
+    "scene_id": 70,
+    "split": "train",
+    "label": 1,
+    "brightness": 20.866336805555555,
+    "detail": 5.191611689233643
+  },
+  {
+    "scene_id": 70,
+    "split": "train",
+    "label": 2,
+    "brightness": 107.16637152777778,
+    "detail": 12.099125015172849
+  },
+  {
+    "scene_id": 71,
+    "split": "train",
+    "label": 0,
+    "brightness": 91.76404513888889,
+    "detail": 95.39657784814554
+  },
+  {
+    "scene_id": 71,
+    "split": "train",
+    "label": 1,
+    "brightness": 11.371545138888889,
+    "detail": 3.11919635810845
+  },
+  {
+    "scene_id": 71,
+    "split": "train",
+    "label": 2,
+    "brightness": 91.76720486111111,
+    "detail": 2.0456681503486225
+  },
+  {
+    "scene_id": 72,
+    "split": "test",
+    "label": 0,
+    "brightness": 163.31842013888888,
+    "detail": 215.60521821177386
+  },
+  {
+    "scene_id": 72,
+    "split": "test",
+    "label": 1,
+    "brightness": 36.68095486111111,
+    "detail": 12.445210799681144
+  },
+  {
+    "scene_id": 72,
+    "split": "test",
+    "label": 2,
+    "brightness": 163.31854166666668,
+    "detail": 5.339939361840556
+  },
+  {
+    "scene_id": 73,
+    "split": "validation",
+    "label": 0,
+    "brightness": 121.20208333333333,
+    "detail": 102.7547823728805
+  },
+  {
+    "scene_id": 73,
+    "split": "validation",
+    "label": 1,
+    "brightness": 24.851545138888888,
+    "detail": 5.933219662876655
+  },
+  {
+    "scene_id": 73,
+    "split": "validation",
+    "label": 2,
+    "brightness": 121.20447916666667,
+    "detail": 2.0284608159320165
+  },
+  {
+    "scene_id": 74,
+    "split": "train",
+    "label": 0,
+    "brightness": 173.19286458333335,
+    "detail": 156.95012262990898
+  },
+  {
+    "scene_id": 74,
+    "split": "train",
+    "label": 1,
+    "brightness": 33.0678125,
+    "detail": 7.3411242494231015
+  },
+  {
+    "scene_id": 74,
+    "split": "train",
+    "label": 2,
+    "brightness": 173.19104166666668,
+    "detail": 7.452969812340476
+  },
+  {
+    "scene_id": 75,
+    "split": "train",
+    "label": 0,
+    "brightness": 87.16993055555555,
+    "detail": 168.82015054586472
+  },
+  {
+    "scene_id": 75,
+    "split": "train",
+    "label": 1,
+    "brightness": 11.173090277777778,
+    "detail": 4.389530774898124
+  },
+  {
+    "scene_id": 75,
+    "split": "train",
+    "label": 2,
+    "brightness": 87.16727430555555,
+    "detail": 2.1806759773585127
+  },
+  {
+    "scene_id": 76,
+    "split": "train",
+    "label": 0,
+    "brightness": 157.95494791666667,
+    "detail": 165.73941087256873
+  },
+  {
+    "scene_id": 76,
+    "split": "train",
+    "label": 1,
+    "brightness": 68.85796875,
+    "detail": 32.83043401409416
+  },
+  {
+    "scene_id": 76,
+    "split": "train",
+    "label": 2,
+    "brightness": 157.95635416666667,
+    "detail": 36.68715863963011
+  },
+  {
+    "scene_id": 77,
+    "split": "train",
+    "label": 0,
+    "brightness": 160.18458333333334,
+    "detail": 156.9969861119307
+  },
+  {
+    "scene_id": 77,
+    "split": "train",
+    "label": 1,
+    "brightness": 48.68881944444445,
+    "detail": 16.027081877627545
+  },
+  {
+    "scene_id": 77,
+    "split": "train",
+    "label": 2,
+    "brightness": 160.18522569444445,
+    "detail": 3.1032789189692176
+  },
+  {
+    "scene_id": 78,
+    "split": "test",
+    "label": 0,
+    "brightness": 111.74274305555555,
+    "detail": 178.6292731183632
+  },
+  {
+    "scene_id": 78,
+    "split": "test",
+    "label": 1,
+    "brightness": 24.12782986111111,
+    "detail": 9.93747722730707
+  },
+  {
+    "scene_id": 78,
+    "split": "test",
+    "label": 2,
+    "brightness": 111.74322916666667,
+    "detail": 1.9170199458403165
+  },
+  {
+    "scene_id": 79,
+    "split": "validation",
+    "label": 0,
+    "brightness": 174.38927083333334,
+    "detail": 185.9411915411015
+  },
+  {
+    "scene_id": 79,
+    "split": "validation",
+    "label": 1,
+    "brightness": 75.77293402777778,
+    "detail": 36.47900977559635
+  },
+  {
+    "scene_id": 79,
+    "split": "validation",
+    "label": 2,
+    "brightness": 174.3904340277778,
+    "detail": 2.201469859538789
+  },
+  {
+    "scene_id": 80,
+    "split": "train",
+    "label": 0,
+    "brightness": 150.99430555555554,
+    "detail": 148.41055333500262
+  },
+  {
+    "scene_id": 80,
+    "split": "train",
+    "label": 1,
+    "brightness": 31.312048611111113,
+    "detail": 8.012613704851049
+  },
+  {
+    "scene_id": 80,
+    "split": "train",
+    "label": 2,
+    "brightness": 150.99559027777778,
+    "detail": 8.577768035994024
+  },
+  {
+    "scene_id": 81,
+    "split": "validation",
+    "label": 0,
+    "brightness": 114.45416666666667,
+    "detail": 106.38529049223378
+  },
+  {
+    "scene_id": 81,
+    "split": "validation",
+    "label": 1,
+    "brightness": 29.32220486111111,
+    "detail": 8.514963591518917
+  },
+  {
+    "scene_id": 81,
+    "split": "validation",
+    "label": 2,
+    "brightness": 114.45423611111111,
+    "detail": 3.005758530024556
+  },
+  {
+    "scene_id": 82,
+    "split": "train",
+    "label": 0,
+    "brightness": 184.83152777777778,
+    "detail": 101.47837524255395
+  },
+  {
+    "scene_id": 82,
+    "split": "train",
+    "label": 1,
+    "brightness": 40.35166666666667,
+    "detail": 6.432142514563525
+  },
+  {
+    "scene_id": 82,
+    "split": "train",
+    "label": 2,
+    "brightness": 184.83276041666667,
+    "detail": 6.4613276562499244
+  },
+  {
+    "scene_id": 83,
+    "split": "train",
+    "label": 0,
+    "brightness": 98.62192708333333,
+    "detail": 192.4069675806191
+  },
+  {
+    "scene_id": 83,
+    "split": "train",
+    "label": 1,
+    "brightness": 13.48267361111111,
+    "detail": 5.254663956063276
+  },
+  {
+    "scene_id": 83,
+    "split": "train",
+    "label": 2,
+    "brightness": 98.62225694444444,
+    "detail": 11.024079457677177
+  },
+  {
+    "scene_id": 84,
+    "split": "train",
+    "label": 0,
+    "brightness": 153.51647569444444,
+    "detail": 158.91371543502592
+  },
+  {
+    "scene_id": 84,
+    "split": "train",
+    "label": 1,
+    "brightness": 70.7512673611111,
+    "detail": 35.10200656450807
+  },
+  {
+    "scene_id": 84,
+    "split": "train",
+    "label": 2,
+    "brightness": 153.51776041666668,
+    "detail": 10.286304843544672
+  },
+  {
+    "scene_id": 85,
+    "split": "train",
+    "label": 0,
+    "brightness": 68.2981076388889,
+    "detail": 211.90039803979363
+  },
+  {
+    "scene_id": 85,
+    "split": "train",
+    "label": 1,
+    "brightness": 11.554010416666667,
+    "detail": 7.696661670282158
+  },
+  {
+    "scene_id": 85,
+    "split": "train",
+    "label": 2,
+    "brightness": 68.29795138888889,
+    "detail": 2.805789446942087
+  },
+  {
+    "scene_id": 86,
+    "split": "test",
+    "label": 0,
+    "brightness": 136.29519097222223,
+    "detail": 118.37038018483382
+  },
+  {
+    "scene_id": 86,
+    "split": "test",
+    "label": 1,
+    "brightness": 60.32112847222222,
+    "detail": 24.563847057970076
+  },
+  {
+    "scene_id": 86,
+    "split": "test",
+    "label": 2,
+    "brightness": 136.29345486111112,
+    "detail": 15.097428914591458
+  },
+  {
+    "scene_id": 87,
+    "split": "validation",
+    "label": 0,
+    "brightness": 130.7565625,
+    "detail": 143.2671569113973
+  },
+  {
+    "scene_id": 87,
+    "split": "validation",
+    "label": 1,
+    "brightness": 34.020069444444445,
+    "detail": 11.239696779976926
+  },
+  {
+    "scene_id": 87,
+    "split": "validation",
+    "label": 2,
+    "brightness": 130.756875,
+    "detail": 2.493145355758152
+  },
+  {
+    "scene_id": 88,
+    "split": "test",
+    "label": 0,
+    "brightness": 84.83244791666667,
+    "detail": 114.87694238080725
+  },
+  {
+    "scene_id": 88,
+    "split": "test",
+    "label": 1,
+    "brightness": 25.659131944444443,
+    "detail": 12.041780180881773
+  },
+  {
+    "scene_id": 88,
+    "split": "test",
+    "label": 2,
+    "brightness": 84.83331597222222,
+    "detail": 27.300727286479113
+  },
+  {
+    "scene_id": 89,
+    "split": "test",
+    "label": 0,
+    "brightness": 131.28567708333333,
+    "detail": 185.43726434426347
+  },
+  {
+    "scene_id": 89,
+    "split": "test",
+    "label": 1,
+    "brightness": 44.09817708333333,
+    "detail": 22.385520213225018
+  },
+  {
+    "scene_id": 89,
+    "split": "test",
+    "label": 2,
+    "brightness": 131.28838541666667,
+    "detail": 2.027648027672558
+  },
+  {
+    "scene_id": 90,
+    "split": "train",
+    "label": 0,
+    "brightness": 105.03633680555555,
+    "detail": 170.13339861590617
+  },
+  {
+    "scene_id": 90,
+    "split": "train",
+    "label": 1,
+    "brightness": 33.366475694444446,
+    "detail": 18.717687734742192
+  },
+  {
+    "scene_id": 90,
+    "split": "train",
+    "label": 2,
+    "brightness": 105.03815972222222,
+    "detail": 2.256624968506368
+  },
+  {
+    "scene_id": 91,
+    "split": "train",
+    "label": 0,
+    "brightness": 97.37069444444444,
+    "detail": 156.32523768656486
+  },
+  {
+    "scene_id": 91,
+    "split": "train",
+    "label": 1,
+    "brightness": 42.48817708333333,
+    "detail": 31.145695330764248
+  },
+  {
+    "scene_id": 91,
+    "split": "train",
+    "label": 2,
+    "brightness": 97.37307291666667,
+    "detail": 22.83753788205821
+  },
+  {
+    "scene_id": 92,
+    "split": "train",
+    "label": 0,
+    "brightness": 136.67427083333334,
+    "detail": 195.41166310490811
+  },
+  {
+    "scene_id": 92,
+    "split": "train",
+    "label": 1,
+    "brightness": 18.710208333333334,
+    "detail": 5.308829652009731
+  },
+  {
+    "scene_id": 92,
+    "split": "train",
+    "label": 2,
+    "brightness": 136.6757638888889,
+    "detail": 2.344180562104219
+  },
+  {
+    "scene_id": 93,
+    "split": "validation",
+    "label": 0,
+    "brightness": 181.10776041666668,
+    "detail": 171.89186154491338
+  },
+  {
+    "scene_id": 93,
+    "split": "validation",
+    "label": 1,
+    "brightness": 40.6109375,
+    "detail": 10.242401877770767
+  },
+  {
+    "scene_id": 93,
+    "split": "validation",
+    "label": 2,
+    "brightness": 181.10505208333333,
+    "detail": 4.20099205090071
+  },
+  {
+    "scene_id": 94,
+    "split": "train",
+    "label": 0,
+    "brightness": 91.57532986111111,
+    "detail": 188.837855770924
+  },
+  {
+    "scene_id": 94,
+    "split": "train",
+    "label": 1,
+    "brightness": 14.131805555555555,
+    "detail": 6.114585222058612
+  },
+  {
+    "scene_id": 94,
+    "split": "train",
+    "label": 2,
+    "brightness": 91.57342013888889,
+    "detail": 16.3461012482417
+  },
+  {
+    "scene_id": 95,
+    "split": "train",
+    "label": 0,
+    "brightness": 127.81151041666666,
+    "detail": 112.29494348033845
+  },
+  {
+    "scene_id": 95,
+    "split": "train",
+    "label": 1,
+    "brightness": 47.33157986111111,
+    "detail": 16.87274731394208
+  },
+  {
+    "scene_id": 95,
+    "split": "train",
+    "label": 2,
+    "brightness": 127.811875,
+    "detail": 14.221185421125984
+  },
+  {
+    "scene_id": 96,
+    "split": "train",
+    "label": 0,
+    "brightness": 151.2253472222222,
+    "detail": 168.71386448130858
+  },
+  {
+    "scene_id": 96,
+    "split": "train",
+    "label": 1,
+    "brightness": 51.689861111111114,
+    "detail": 21.115270553586946
+  },
+  {
+    "scene_id": 96,
+    "split": "train",
+    "label": 2,
+    "brightness": 151.2237326388889,
+    "detail": 3.8549554440983234
+  },
+  {
+    "scene_id": 97,
+    "split": "test",
+    "label": 0,
+    "brightness": 144.65013888888888,
+    "detail": 157.02126645800533
+  },
+  {
+    "scene_id": 97,
+    "split": "test",
+    "label": 1,
+    "brightness": 57.6240625,
+    "detail": 26.32393454290103
+  },
+  {
+    "scene_id": 97,
+    "split": "test",
+    "label": 2,
+    "brightness": 144.64960069444444,
+    "detail": 1.711839890156045
+  },
+  {
+    "scene_id": 98,
+    "split": "train",
+    "label": 0,
+    "brightness": 178.1226736111111,
+    "detail": 86.54249885216439
+  },
+  {
+    "scene_id": 98,
+    "split": "train",
+    "label": 1,
+    "brightness": 31.483472222222222,
+    "detail": 4.327732682514963
+  },
+  {
+    "scene_id": 98,
+    "split": "train",
+    "label": 2,
+    "brightness": 178.12387152777777,
+    "detail": 2.0105116093268456
+  },
+  {
+    "scene_id": 99,
+    "split": "train",
+    "label": 0,
+    "brightness": 123.93845486111111,
+    "detail": 133.61258276190367
+  },
+  {
+    "scene_id": 99,
+    "split": "train",
+    "label": 1,
+    "brightness": 25.888055555555557,
+    "detail": 7.432636887117869
+  },
+  {
+    "scene_id": 99,
+    "split": "train",
+    "label": 2,
+    "brightness": 123.93734375,
+    "detail": 20.56488735936442
+  },
+  {
+    "scene_id": 100,
+    "split": "test",
+    "label": 0,
+    "brightness": 164.46526041666667,
+    "detail": 156.93459314552257
+  },
+  {
+    "scene_id": 100,
+    "split": "test",
+    "label": 1,
+    "brightness": 37.054409722222225,
+    "detail": 9.534888343280583
+  },
+  {
+    "scene_id": 100,
+    "split": "test",
+    "label": 2,
+    "brightness": 164.46588541666668,
+    "detail": 17.41864431137781
+  },
+  {
+    "scene_id": 101,
+    "split": "train",
+    "label": 0,
+    "brightness": 177.87399305555556,
+    "detail": 149.1081351863731
+  },
+  {
+    "scene_id": 101,
+    "split": "train",
+    "label": 1,
+    "brightness": 68.78630208333334,
+    "detail": 23.81199176576577
+  },
+  {
+    "scene_id": 101,
+    "split": "train",
+    "label": 2,
+    "brightness": 177.87168402777777,
+    "detail": 26.371440043266045
+  },
+  {
+    "scene_id": 102,
+    "split": "train",
+    "label": 0,
+    "brightness": 80.29145833333334,
+    "detail": 205.29820110931792
+  },
+  {
+    "scene_id": 102,
+    "split": "train",
+    "label": 1,
+    "brightness": 22.10965277777778,
+    "detail": 17.107800964551448
+  },
+  {
+    "scene_id": 102,
+    "split": "train",
+    "label": 2,
+    "brightness": 80.28956597222222,
+    "detail": 1.9048299771220387
+  },
+  {
+    "scene_id": 103,
+    "split": "train",
+    "label": 0,
+    "brightness": 96.39616319444444,
+    "detail": 140.53510352344358
+  },
+  {
+    "scene_id": 103,
+    "split": "train",
+    "label": 1,
+    "brightness": 30.09453125,
+    "detail": 15.253409653028054
+  },
+  {
+    "scene_id": 103,
+    "split": "train",
+    "label": 2,
+    "brightness": 96.3953125,
+    "detail": 2.3111257327130494
+  },
+  {
+    "scene_id": 104,
+    "split": "validation",
+    "label": 0,
+    "brightness": 166.16847222222222,
+    "detail": 213.4364635188151
+  },
+  {
+    "scene_id": 104,
+    "split": "validation",
+    "label": 1,
+    "brightness": 59.34329861111111,
+    "detail": 28.66217725266427
+  },
+  {
+    "scene_id": 104,
+    "split": "validation",
+    "label": 2,
+    "brightness": 166.16873263888888,
+    "detail": 29.290579192240035
+  },
+  {
+    "scene_id": 105,
+    "split": "train",
+    "label": 0,
+    "brightness": 140.23571180555555,
+    "detail": 146.0732510852728
+  },
+  {
+    "scene_id": 105,
+    "split": "train",
+    "label": 1,
+    "brightness": 53.9171875,
+    "detail": 22.95650407754174
+  },
+  {
+    "scene_id": 105,
+    "split": "train",
+    "label": 2,
+    "brightness": 140.23651041666668,
+    "detail": 2.3273087241608583
+  },
+  {
+    "scene_id": 106,
+    "split": "train",
+    "label": 0,
+    "brightness": 186.54614583333333,
+    "detail": 132.56159838625314
+  },
+  {
+    "scene_id": 106,
+    "split": "train",
+    "label": 1,
+    "brightness": 57.75206597222222,
+    "detail": 14.20708755741756
+  },
+  {
+    "scene_id": 106,
+    "split": "train",
+    "label": 2,
+    "brightness": 186.5481423611111,
+    "detail": 1.72705081089788
+  },
+  {
+    "scene_id": 107,
+    "split": "train",
+    "label": 0,
+    "brightness": 141.21260416666667,
+    "detail": 131.8530550531356
+  },
+  {
+    "scene_id": 107,
+    "split": "train",
+    "label": 1,
+    "brightness": 51.85657986111111,
+    "detail": 19.183889934540137
+  },
+  {
+    "scene_id": 107,
+    "split": "train",
+    "label": 2,
+    "brightness": 141.20953125,
+    "detail": 2.358525118958201
+  },
+  {
+    "scene_id": 108,
+    "split": "train",
+    "label": 0,
+    "brightness": 166.79732638888888,
+    "detail": 140.05609400283996
+  },
+  {
+    "scene_id": 108,
+    "split": "train",
+    "label": 1,
+    "brightness": 22.92329861111111,
+    "detail": 4.248568455164381
+  },
+  {
+    "scene_id": 108,
+    "split": "train",
+    "label": 2,
+    "brightness": 166.79546875,
+    "detail": 3.112288733117227
+  },
+  {
+    "scene_id": 109,
+    "split": "train",
+    "label": 0,
+    "brightness": 128.76236111111112,
+    "detail": 137.40812121645396
+  },
+  {
+    "scene_id": 109,
+    "split": "train",
+    "label": 1,
+    "brightness": 59.741024305555555,
+    "detail": 30.887303028503243
+  },
+  {
+    "scene_id": 109,
+    "split": "train",
+    "label": 2,
+    "brightness": 128.76368055555557,
+    "detail": 3.9747190758427977
+  },
+  {
+    "scene_id": 110,
+    "split": "train",
+    "label": 0,
+    "brightness": 176.95131944444444,
+    "detail": 153.15349390381465
+  },
+  {
+    "scene_id": 110,
+    "split": "train",
+    "label": 1,
+    "brightness": 57.46319444444445,
+    "detail": 17.599073989471833
+  },
+  {
+    "scene_id": 110,
+    "split": "train",
+    "label": 2,
+    "brightness": 176.94987847222222,
+    "detail": 3.279891715327021
+  },
+  {
+    "scene_id": 111,
+    "split": "train",
+    "label": 0,
+    "brightness": 79.35838541666666,
+    "detail": 113.44657509010415
+  },
+  {
+    "scene_id": 111,
+    "split": "train",
+    "label": 1,
+    "brightness": 28.947708333333335,
+    "detail": 16.547399311963304
+  },
+  {
+    "scene_id": 111,
+    "split": "train",
+    "label": 2,
+    "brightness": 79.36069444444445,
+    "detail": 1.954048606714437
+  },
+  {
+    "scene_id": 112,
+    "split": "validation",
+    "label": 0,
+    "brightness": 74.21128472222222,
+    "detail": 261.7851780752677
+  },
+  {
+    "scene_id": 112,
+    "split": "validation",
+    "label": 1,
+    "brightness": 15.944131944444445,
+    "detail": 13.652707058335315
+  },
+  {
+    "scene_id": 112,
+    "split": "validation",
+    "label": 2,
+    "brightness": 74.21112847222223,
+    "detail": 3.6267553540896946
+  },
+  {
+    "scene_id": 113,
+    "split": "validation",
+    "label": 0,
+    "brightness": 68.76296875,
+    "detail": 120.71624264158375
+  },
+  {
+    "scene_id": 113,
+    "split": "validation",
+    "label": 1,
+    "brightness": 32.52826388888889,
+    "detail": 28.289447609999822
+  },
+  {
+    "scene_id": 113,
+    "split": "validation",
+    "label": 2,
+    "brightness": 68.76526041666666,
+    "detail": 12.656734399279632
+  },
+  {
+    "scene_id": 114,
+    "split": "train",
+    "label": 0,
+    "brightness": 151.9843923611111,
+    "detail": 84.73962872937523
+  },
+  {
+    "scene_id": 114,
+    "split": "train",
+    "label": 1,
+    "brightness": 59.517795138888886,
+    "detail": 14.423185635597033
+  },
+  {
+    "scene_id": 114,
+    "split": "train",
+    "label": 2,
+    "brightness": 151.9883159722222,
+    "detail": 4.026754892668319
+  },
+  {
+    "scene_id": 115,
+    "split": "train",
+    "label": 0,
+    "brightness": 149.1767361111111,
+    "detail": 134.4267946832707
+  },
+  {
+    "scene_id": 115,
+    "split": "train",
+    "label": 1,
+    "brightness": 58.70692708333333,
+    "detail": 22.21415294738322
+  },
+  {
+    "scene_id": 115,
+    "split": "train",
+    "label": 2,
+    "brightness": 149.17852430555556,
+    "detail": 24.54844144543522
+  },
+  {
+    "scene_id": 116,
+    "split": "train",
+    "label": 0,
+    "brightness": 80.63131944444444,
+    "detail": 220.4003034209461
+  },
+  {
+    "scene_id": 116,
+    "split": "train",
+    "label": 1,
+    "brightness": 22.14840277777778,
+    "detail": 18.16472671437654
+  },
+  {
+    "scene_id": 116,
+    "split": "train",
+    "label": 2,
+    "brightness": 80.63192708333334,
+    "detail": 2.1091265482004236
+  },
+  {
+    "scene_id": 117,
+    "split": "train",
+    "label": 0,
+    "brightness": 168.53666666666666,
+    "detail": 219.1090620581338
+  },
+  {
+    "scene_id": 117,
+    "split": "train",
+    "label": 1,
+    "brightness": 23.208940972222223,
+    "detail": 5.801780242317233
+  },
+  {
+    "scene_id": 117,
+    "split": "train",
+    "label": 2,
+    "brightness": 168.5363715277778,
+    "detail": 7.677160413705412
+  },
+  {
+    "scene_id": 118,
+    "split": "train",
+    "label": 0,
+    "brightness": 176.10510416666668,
+    "detail": 133.70081821139632
+  },
+  {
+    "scene_id": 118,
+    "split": "train",
+    "label": 1,
+    "brightness": 63.142100694444444,
+    "detail": 18.64159083781892
+  },
+  {
+    "scene_id": 118,
+    "split": "train",
+    "label": 2,
+    "brightness": 176.10739583333333,
+    "detail": 2.6951444391475863
+  },
+  {
+    "scene_id": 119,
+    "split": "test",
+    "label": 0,
+    "brightness": 180.2175347222222,
+    "detail": 106.63043244050493
+  },
+  {
+    "scene_id": 119,
+    "split": "test",
+    "label": 1,
+    "brightness": 36.21126736111111,
+    "detail": 5.896721074788609
+  },
+  {
+    "scene_id": 119,
+    "split": "test",
+    "label": 2,
+    "brightness": 180.21711805555555,
+    "detail": 19.636527134290958
+  },
+  {
+    "scene_id": 120,
+    "split": "test",
+    "label": 0,
+    "brightness": 167.1548263888889,
+    "detail": 111.31903824038885
+  },
+  {
+    "scene_id": 120,
+    "split": "test",
+    "label": 1,
+    "brightness": 78.97145833333333,
+    "detail": 26.016606049680668
+  },
+  {
+    "scene_id": 120,
+    "split": "test",
+    "label": 2,
+    "brightness": 167.15789930555556,
+    "detail": 3.619054763169212
+  },
+  {
+    "scene_id": 121,
+    "split": "train",
+    "label": 0,
+    "brightness": 137.72741319444444,
+    "detail": 85.49738324517364
+  },
+  {
+    "scene_id": 121,
+    "split": "train",
+    "label": 1,
+    "brightness": 53.93625,
+    "detail": 14.552857850990566
+  },
+  {
+    "scene_id": 121,
+    "split": "train",
+    "label": 2,
+    "brightness": 137.72678819444445,
+    "detail": 1.9269481982621381
+  },
+  {
+    "scene_id": 122,
+    "split": "test",
+    "label": 0,
+    "brightness": 162.80798611111112,
+    "detail": 189.69417198329955
+  },
+  {
+    "scene_id": 122,
+    "split": "test",
+    "label": 1,
+    "brightness": 27.41611111111111,
+    "detail": 6.988640363478496
+  },
+  {
+    "scene_id": 122,
+    "split": "test",
+    "label": 2,
+    "brightness": 162.80621527777777,
+    "detail": 15.280357132004683
+  },
+  {
+    "scene_id": 123,
+    "split": "train",
+    "label": 0,
+    "brightness": 143.81526041666666,
+    "detail": 162.38740385456686
+  },
+  {
+    "scene_id": 123,
+    "split": "train",
+    "label": 1,
+    "brightness": 33.158420138888886,
+    "detail": 10.220602356978835
+  },
+  {
+    "scene_id": 123,
+    "split": "train",
+    "label": 2,
+    "brightness": 143.81640625,
+    "detail": 1.8484382726014665
+  },
+  {
+    "scene_id": 124,
+    "split": "train",
+    "label": 0,
+    "brightness": 160.22961805555556,
+    "detail": 241.88200233310178
+  },
+  {
+    "scene_id": 124,
+    "split": "train",
+    "label": 1,
+    "brightness": 26.559913194444444,
+    "detail": 8.240283334434702
+  },
+  {
+    "scene_id": 124,
+    "split": "train",
+    "label": 2,
+    "brightness": 160.23086805555556,
+    "detail": 3.388488085248657
+  },
+  {
+    "scene_id": 125,
+    "split": "train",
+    "label": 0,
+    "brightness": 167.84064236111112,
+    "detail": 228.43424789940042
+  },
+  {
+    "scene_id": 125,
+    "split": "train",
+    "label": 1,
+    "brightness": 73.86991319444445,
+    "detail": 45.589920215849716
+  },
+  {
+    "scene_id": 125,
+    "split": "train",
+    "label": 2,
+    "brightness": 167.8437152777778,
+    "detail": 3.961200378669148
+  },
+  {
+    "scene_id": 126,
+    "split": "train",
+    "label": 0,
+    "brightness": 61.222309027777776,
+    "detail": 226.74997753442193
+  },
+  {
+    "scene_id": 126,
+    "split": "train",
+    "label": 1,
+    "brightness": 12.433142361111111,
+    "detail": 10.946876350759267
+  },
+  {
+    "scene_id": 126,
+    "split": "train",
+    "label": 2,
+    "brightness": 61.22213541666667,
+    "detail": 2.8850780436453785
+  },
+  {
+    "scene_id": 127,
+    "split": "test",
+    "label": 0,
+    "brightness": 68.03545138888889,
+    "detail": 186.23879701578574
+  },
+  {
+    "scene_id": 127,
+    "split": "test",
+    "label": 1,
+    "brightness": 29.463229166666668,
+    "detail": 36.33013510236846
+  },
+  {
+    "scene_id": 127,
+    "split": "test",
+    "label": 2,
+    "brightness": 68.0351736111111,
+    "detail": 10.008196749984537
+  },
+  {
+    "scene_id": 128,
+    "split": "train",
+    "label": 0,
+    "brightness": 142.17069444444445,
+    "detail": 242.01105792955107
+  },
+  {
+    "scene_id": 128,
+    "split": "train",
+    "label": 1,
+    "brightness": 57.183559027777775,
+    "detail": 40.5070489640014
+  },
+  {
+    "scene_id": 128,
+    "split": "train",
+    "label": 2,
+    "brightness": 142.1729513888889,
+    "detail": 28.11924934322735
+  },
+  {
+    "scene_id": 129,
+    "split": "train",
+    "label": 0,
+    "brightness": 110.45565972222222,
+    "detail": 213.42177762000563
+  },
+  {
+    "scene_id": 129,
+    "split": "train",
+    "label": 1,
+    "brightness": 46.77251736111111,
+    "detail": 39.61324961316884
+  },
+  {
+    "scene_id": 129,
+    "split": "train",
+    "label": 2,
+    "brightness": 110.45444444444445,
+    "detail": 3.362972108660879
+  },
+  {
+    "scene_id": 130,
+    "split": "validation",
+    "label": 0,
+    "brightness": 118.05758680555556,
+    "detail": 60.22909530084726
+  },
+  {
+    "scene_id": 130,
+    "split": "validation",
+    "label": 1,
+    "brightness": 27.57378472222222,
+    "detail": 4.8861722714782045
+  },
+  {
+    "scene_id": 130,
+    "split": "validation",
+    "label": 2,
+    "brightness": 118.06015625,
+    "detail": 13.28014389066039
+  },
+  {
+    "scene_id": 131,
+    "split": "validation",
+    "label": 0,
+    "brightness": 142.37317708333333,
+    "detail": 174.02231096287846
+  },
+  {
+    "scene_id": 131,
+    "split": "validation",
+    "label": 1,
+    "brightness": 38.596944444444446,
+    "detail": 14.361687957430442
+  },
+  {
+    "scene_id": 131,
+    "split": "validation",
+    "label": 2,
+    "brightness": 142.37116319444445,
+    "detail": 23.4508505511546
+  },
+  {
+    "scene_id": 132,
+    "split": "train",
+    "label": 0,
+    "brightness": 78.39496527777777,
+    "detail": 226.63704331044102
+  },
+  {
+    "scene_id": 132,
+    "split": "train",
+    "label": 1,
+    "brightness": 21.509479166666665,
+    "detail": 18.62265279372091
+  },
+  {
+    "scene_id": 132,
+    "split": "train",
+    "label": 2,
+    "brightness": 78.39404513888888,
+    "detail": 3.0016076599239168
+  },
+  {
+    "scene_id": 133,
+    "split": "train",
+    "label": 0,
+    "brightness": 181.95074652777777,
+    "detail": 121.22017760618097
+  },
+  {
+    "scene_id": 133,
+    "split": "train",
+    "label": 1,
+    "brightness": 62.18159722222222,
+    "detail": 15.589012950752192
+  },
+  {
+    "scene_id": 133,
+    "split": "train",
+    "label": 2,
+    "brightness": 181.949375,
+    "detail": 3.6689983764409506
+  },
+  {
+    "scene_id": 134,
+    "split": "train",
+    "label": 0,
+    "brightness": 180.13368055555554,
+    "detail": 132.7918265215204
+  },
+  {
+    "scene_id": 134,
+    "split": "train",
+    "label": 1,
+    "brightness": 31.376753472222223,
+    "detail": 5.614754996660412
+  },
+  {
+    "scene_id": 134,
+    "split": "train",
+    "label": 2,
+    "brightness": 180.13206597222222,
+    "detail": 14.790579103289081
+  },
+  {
+    "scene_id": 135,
+    "split": "test",
+    "label": 0,
+    "brightness": 128.77581597222223,
+    "detail": 208.66228510616546
+  },
+  {
+    "scene_id": 135,
+    "split": "test",
+    "label": 1,
+    "brightness": 23.111770833333335,
+    "detail": 8.331990610864024
+  },
+  {
+    "scene_id": 135,
+    "split": "test",
+    "label": 2,
+    "brightness": 128.77255208333332,
+    "detail": 20.00499870253952
+  },
+  {
+    "scene_id": 136,
+    "split": "validation",
+    "label": 0,
+    "brightness": 76.69352430555556,
+    "detail": 184.87159422523357
+  },
+  {
+    "scene_id": 136,
+    "split": "validation",
+    "label": 1,
+    "brightness": 21.76755208333333,
+    "detail": 16.383541698042947
+  },
+  {
+    "scene_id": 136,
+    "split": "validation",
+    "label": 2,
+    "brightness": 76.69355902777778,
+    "detail": 4.930358033873731
+  },
+  {
+    "scene_id": 137,
+    "split": "train",
+    "label": 0,
+    "brightness": 167.02951388888889,
+    "detail": 142.24015958118437
+  },
+  {
+    "scene_id": 137,
+    "split": "train",
+    "label": 1,
+    "brightness": 71.89157986111111,
+    "detail": 27.69980913958991
+  },
+  {
+    "scene_id": 137,
+    "split": "train",
+    "label": 2,
+    "brightness": 167.02756944444445,
+    "detail": 3.250529907680619
+  },
+  {
+    "scene_id": 138,
+    "split": "validation",
+    "label": 0,
+    "brightness": 132.7697222222222,
+    "detail": 260.4779830755833
+  },
+  {
+    "scene_id": 138,
+    "split": "validation",
+    "label": 1,
+    "brightness": 61.67069444444444,
+    "detail": 57.52084545968932
+  },
+  {
+    "scene_id": 138,
+    "split": "validation",
+    "label": 2,
+    "brightness": 132.76736111111111,
+    "detail": 6.882601896246597
+  },
+  {
+    "scene_id": 139,
+    "split": "train",
+    "label": 0,
+    "brightness": 112.91479166666667,
+    "detail": 121.85903305325604
+  },
+  {
+    "scene_id": 139,
+    "split": "train",
+    "label": 1,
+    "brightness": 36.21335069444444,
+    "detail": 14.028424741169948
+  },
+  {
+    "scene_id": 139,
+    "split": "train",
+    "label": 2,
+    "brightness": 112.91828125,
+    "detail": 10.16919073490997
+  },
+  {
+    "scene_id": 140,
+    "split": "test",
+    "label": 0,
+    "brightness": 145.51914930555554,
+    "detail": 110.87080410074115
+  },
+  {
+    "scene_id": 140,
+    "split": "test",
+    "label": 1,
+    "brightness": 67.39708333333333,
+    "detail": 25.05527369276291
+  },
+  {
+    "scene_id": 140,
+    "split": "test",
+    "label": 2,
+    "brightness": 145.52017361111112,
+    "detail": 4.457847470732464
+  },
+  {
+    "scene_id": 141,
+    "split": "validation",
+    "label": 0,
+    "brightness": 151.3268402777778,
+    "detail": 129.98774852091603
+  },
+  {
+    "scene_id": 141,
+    "split": "validation",
+    "label": 1,
+    "brightness": 33.29505208333333,
+    "detail": 7.870501093526213
+  },
+  {
+    "scene_id": 141,
+    "split": "validation",
+    "label": 2,
+    "brightness": 151.32524305555555,
+    "detail": 2.0696944936939357
+  },
+  {
+    "scene_id": 142,
+    "split": "test",
+    "label": 0,
+    "brightness": 62.28427083333333,
+    "detail": 155.5120628440707
+  },
+  {
+    "scene_id": 142,
+    "split": "test",
+    "label": 1,
+    "brightness": 23.676388888888887,
+    "detail": 23.865573709677697
+  },
+  {
+    "scene_id": 142,
+    "split": "test",
+    "label": 2,
+    "brightness": 62.28484375,
+    "detail": 2.7598225571517188
+  },
+  {
+    "scene_id": 143,
+    "split": "train",
+    "label": 0,
+    "brightness": 110.55625,
+    "detail": 171.70132761791055
+  },
+  {
+    "scene_id": 143,
+    "split": "train",
+    "label": 1,
+    "brightness": 30.582638888888887,
+    "detail": 14.681877598020195
+  },
+  {
+    "scene_id": 143,
+    "split": "train",
+    "label": 2,
+    "brightness": 110.55397569444445,
+    "detail": 5.052769957147388
+  },
+  {
+    "scene_id": 144,
+    "split": "train",
+    "label": 0,
+    "brightness": 158.4410763888889,
+    "detail": 68.29630414312301
+  },
+  {
+    "scene_id": 144,
+    "split": "train",
+    "label": 1,
+    "brightness": 44.96149305555556,
+    "detail": 7.057275092997007
+  },
+  {
+    "scene_id": 144,
+    "split": "train",
+    "label": 2,
+    "brightness": 158.43859375,
+    "detail": 10.980018065882794
+  },
+  {
+    "scene_id": 145,
+    "split": "train",
+    "label": 0,
+    "brightness": 134.72894097222223,
+    "detail": 206.90221181780694
+  },
+  {
+    "scene_id": 145,
+    "split": "train",
+    "label": 1,
+    "brightness": 28.495399305555555,
+    "detail": 10.837855621111848
+  },
+  {
+    "scene_id": 145,
+    "split": "train",
+    "label": 2,
+    "brightness": 134.7278472222222,
+    "detail": 2.5869902737617516
+  },
+  {
+    "scene_id": 146,
+    "split": "test",
+    "label": 0,
+    "brightness": 157.0780902777778,
+    "detail": 100.16840376427508
+  },
+  {
+    "scene_id": 146,
+    "split": "test",
+    "label": 1,
+    "brightness": 37.471041666666665,
+    "detail": 7.288616242226666
+  },
+  {
+    "scene_id": 146,
+    "split": "test",
+    "label": 2,
+    "brightness": 157.07756944444444,
+    "detail": 9.012450228288975
+  },
+  {
+    "scene_id": 147,
+    "split": "train",
+    "label": 0,
+    "brightness": 183.661875,
+    "detail": 116.37635971178963
+  },
+  {
+    "scene_id": 147,
+    "split": "train",
+    "label": 1,
+    "brightness": 80.60661458333334,
+    "detail": 23.774431778677382
+  },
+  {
+    "scene_id": 147,
+    "split": "train",
+    "label": 2,
+    "brightness": 183.66055555555556,
+    "detail": 13.001921386509212
+  },
+  {
+    "scene_id": 148,
+    "split": "train",
+    "label": 0,
+    "brightness": 138.87838541666667,
+    "detail": 195.76059829437338
+  },
+  {
+    "scene_id": 148,
+    "split": "train",
+    "label": 1,
+    "brightness": 17.592604166666668,
+    "detail": 4.762914236732566
+  },
+  {
+    "scene_id": 148,
+    "split": "train",
+    "label": 2,
+    "brightness": 138.88074652777777,
+    "detail": 1.591919296180493
+  },
+  {
+    "scene_id": 149,
+    "split": "train",
+    "label": 0,
+    "brightness": 68.6399826388889,
+    "detail": 142.58702834945214
+  },
+  {
+    "scene_id": 149,
+    "split": "train",
+    "label": 1,
+    "brightness": 30.93340277777778,
+    "detail": 30.2895705904692
+  },
+  {
+    "scene_id": 149,
+    "split": "train",
+    "label": 2,
+    "brightness": 68.64065972222222,
+    "detail": 7.315860807405709
+  },
+  {
+    "scene_id": 150,
+    "split": "test",
+    "label": 0,
+    "brightness": 59.915104166666666,
+    "detail": 219.93363687094566
+  },
+  {
+    "scene_id": 150,
+    "split": "test",
+    "label": 1,
+    "brightness": 19.830434027777777,
+    "detail": 25.48261095594819
+  },
+  {
+    "scene_id": 150,
+    "split": "test",
+    "label": 2,
+    "brightness": 59.91206597222222,
+    "detail": 8.359144222287032
+  },
+  {
+    "scene_id": 151,
+    "split": "train",
+    "label": 0,
+    "brightness": 121.90824652777778,
+    "detail": 199.07675386121176
+  },
+  {
+    "scene_id": 151,
+    "split": "train",
+    "label": 1,
+    "brightness": 19.02123263888889,
+    "detail": 6.4817414921975764
+  },
+  {
+    "scene_id": 151,
+    "split": "train",
+    "label": 2,
+    "brightness": 121.91104166666666,
+    "detail": 1.7925234853367704
+  },
+  {
+    "scene_id": 152,
+    "split": "train",
+    "label": 0,
+    "brightness": 85.07616319444445,
+    "detail": 141.6420349908488
+  },
+  {
+    "scene_id": 152,
+    "split": "train",
+    "label": 1,
+    "brightness": 15.851059027777778,
+    "detail": 6.508884979129247
+  },
+  {
+    "scene_id": 152,
+    "split": "train",
+    "label": 2,
+    "brightness": 85.07743055555555,
+    "detail": 2.867235056340674
+  },
+  {
+    "scene_id": 153,
+    "split": "validation",
+    "label": 0,
+    "brightness": 175.2821701388889,
+    "detail": 152.08753519542722
+  },
+  {
+    "scene_id": 153,
+    "split": "validation",
+    "label": 1,
+    "brightness": 76.50987847222223,
+    "detail": 30.33696940493137
+  },
+  {
+    "scene_id": 153,
+    "split": "validation",
+    "label": 2,
+    "brightness": 175.28208333333333,
+    "detail": 4.1682036577097135
+  },
+  {
+    "scene_id": 154,
+    "split": "train",
+    "label": 0,
+    "brightness": 132.938125,
+    "detail": 122.63440515401486
+  },
+  {
+    "scene_id": 154,
+    "split": "train",
+    "label": 1,
+    "brightness": 25.010572916666668,
+    "detail": 5.963818566698267
+  },
+  {
+    "scene_id": 154,
+    "split": "train",
+    "label": 2,
+    "brightness": 132.94079861111112,
+    "detail": 7.151544015546785
+  },
+  {
+    "scene_id": 155,
+    "split": "train",
+    "label": 0,
+    "brightness": 99.75972222222222,
+    "detail": 197.3570242132889
+  },
+  {
+    "scene_id": 155,
+    "split": "train",
+    "label": 1,
+    "brightness": 26.897395833333334,
+    "detail": 15.830029567210072
+  },
+  {
+    "scene_id": 155,
+    "split": "train",
+    "label": 2,
+    "brightness": 99.75765625,
+    "detail": 9.857340918638823
+  },
+  {
+    "scene_id": 156,
+    "split": "train",
+    "label": 0,
+    "brightness": 77.5403125,
+    "detail": 124.2172458310791
+  },
+  {
+    "scene_id": 156,
+    "split": "train",
+    "label": 1,
+    "brightness": 17.305364583333333,
+    "detail": 7.7689208231931115
+  },
+  {
+    "scene_id": 156,
+    "split": "train",
+    "label": 2,
+    "brightness": 77.53677083333334,
+    "detail": 38.973323120440355
+  },
+  {
+    "scene_id": 157,
+    "split": "train",
+    "label": 0,
+    "brightness": 94.17321180555555,
+    "detail": 248.59504448374219
+  },
+  {
+    "scene_id": 157,
+    "split": "train",
+    "label": 1,
+    "brightness": 18.319375,
+    "detail": 10.992103023785157
+  },
+  {
+    "scene_id": 157,
+    "split": "train",
+    "label": 2,
+    "brightness": 94.17182291666667,
+    "detail": 28.984445800044515
+  },
+  {
+    "scene_id": 158,
+    "split": "validation",
+    "label": 0,
+    "brightness": 182.70805555555555,
+    "detail": 206.6210271048429
+  },
+  {
+    "scene_id": 158,
+    "split": "validation",
+    "label": 1,
+    "brightness": 25.74486111111111,
+    "detail": 5.740760309118564
+  },
+  {
+    "scene_id": 158,
+    "split": "validation",
+    "label": 2,
+    "brightness": 182.70855902777777,
+    "detail": 42.563331314714695
+  },
+  {
+    "scene_id": 159,
+    "split": "validation",
+    "label": 0,
+    "brightness": 160.20114583333333,
+    "detail": 122.57139041450075
+  },
+  {
+    "scene_id": 159,
+    "split": "validation",
+    "label": 1,
+    "brightness": 76.48331597222223,
+    "detail": 29.15051937794746
+  },
+  {
+    "scene_id": 159,
+    "split": "validation",
+    "label": 2,
+    "brightness": 160.20192708333335,
+    "detail": 2.3444809176443697
+  },
+  {
+    "scene_id": 160,
+    "split": "train",
+    "label": 0,
+    "brightness": 129.5756076388889,
+    "detail": 91.15469595799522
+  },
+  {
+    "scene_id": 160,
+    "split": "train",
+    "label": 1,
+    "brightness": 21.473177083333333,
+    "detail": 4.116951247550815
+  },
+  {
+    "scene_id": 160,
+    "split": "train",
+    "label": 2,
+    "brightness": 129.57470486111112,
+    "detail": 4.693483715453402
+  },
+  {
+    "scene_id": 161,
+    "split": "train",
+    "label": 0,
+    "brightness": 119.179375,
+    "detail": 206.79315026060743
+  },
+  {
+    "scene_id": 161,
+    "split": "train",
+    "label": 1,
+    "brightness": 31.110659722222223,
+    "detail": 15.588473189178403
+  },
+  {
+    "scene_id": 161,
+    "split": "train",
+    "label": 2,
+    "brightness": 119.17998263888889,
+    "detail": 2.9856545442732085
+  },
+  {
+    "scene_id": 162,
+    "split": "validation",
+    "label": 0,
+    "brightness": 68.1809375,
+    "detail": 78.58093635290878
+  },
+  {
+    "scene_id": 162,
+    "split": "validation",
+    "label": 1,
+    "brightness": 18.201371527777777,
+    "detail": 7.130661363746555
+  },
+  {
+    "scene_id": 162,
+    "split": "validation",
+    "label": 2,
+    "brightness": 68.17944444444444,
+    "detail": 6.291161850021763
+  },
+  {
+    "scene_id": 163,
+    "split": "train",
+    "label": 0,
+    "brightness": 161.64871527777777,
+    "detail": 200.07320976958292
+  },
+  {
+    "scene_id": 163,
+    "split": "train",
+    "label": 1,
+    "brightness": 20.862569444444443,
+    "detail": 4.96615079706972
+  },
+  {
+    "scene_id": 163,
+    "split": "train",
+    "label": 2,
+    "brightness": 161.64869791666666,
+    "detail": 11.674987438314918
+  },
+  {
+    "scene_id": 164,
+    "split": "validation",
+    "label": 0,
+    "brightness": 70.32963541666666,
+    "detail": 157.95581526631446
+  },
+  {
+    "scene_id": 164,
+    "split": "validation",
+    "label": 1,
+    "brightness": 24.48440972222222,
+    "detail": 20.457529098722556
+  },
+  {
+    "scene_id": 164,
+    "split": "validation",
+    "label": 2,
+    "brightness": 70.3325,
+    "detail": 19.374937589825166
+  },
+  {
+    "scene_id": 165,
+    "split": "test",
+    "label": 0,
+    "brightness": 117.53239583333334,
+    "detail": 220.28586715959003
+  },
+  {
+    "scene_id": 165,
+    "split": "test",
+    "label": 1,
+    "brightness": 19.12407986111111,
+    "detail": 7.445709673778035
+  },
+  {
+    "scene_id": 165,
+    "split": "test",
+    "label": 2,
+    "brightness": 117.52984375,
+    "detail": 1.5626103550517132
+  },
+  {
+    "scene_id": 166,
+    "split": "validation",
+    "label": 0,
+    "brightness": 149.1890798611111,
+    "detail": 155.0376262549257
+  },
+  {
+    "scene_id": 166,
+    "split": "validation",
+    "label": 1,
+    "brightness": 67.21328125,
+    "detail": 32.75230342524323
+  },
+  {
+    "scene_id": 166,
+    "split": "validation",
+    "label": 2,
+    "brightness": 149.18921875,
+    "detail": 29.033379528154796
+  },
+  {
+    "scene_id": 167,
+    "split": "test",
+    "label": 0,
+    "brightness": 73.98847222222223,
+    "detail": 93.9137729054577
+  },
+  {
+    "scene_id": 167,
+    "split": "test",
+    "label": 1,
+    "brightness": 34.56625,
+    "detail": 21.837527644895662
+  },
+  {
+    "scene_id": 167,
+    "split": "test",
+    "label": 2,
+    "brightness": 73.98793402777778,
+    "detail": 4.14620859743777
+  },
+  {
+    "scene_id": 168,
+    "split": "validation",
+    "label": 0,
+    "brightness": 93.46310763888889,
+    "detail": 282.2325039613699
+  },
+  {
+    "scene_id": 168,
+    "split": "validation",
+    "label": 1,
+    "brightness": 18.465329861111112,
+    "detail": 12.56345763256148
+  },
+  {
+    "scene_id": 168,
+    "split": "validation",
+    "label": 2,
+    "brightness": 93.46203125,
+    "detail": 1.957262032062983
+  },
+  {
+    "scene_id": 169,
+    "split": "train",
+    "label": 0,
+    "brightness": 119.33232638888889,
+    "detail": 197.90490069843713
+  },
+  {
+    "scene_id": 169,
+    "split": "train",
+    "label": 1,
+    "brightness": 26.306805555555556,
+    "detail": 11.173450608319914
+  },
+  {
+    "scene_id": 169,
+    "split": "train",
+    "label": 2,
+    "brightness": 119.33298611111111,
+    "detail": 2.2425623431089297
+  },
+  {
+    "scene_id": 170,
+    "split": "train",
+    "label": 0,
+    "brightness": 159.44703125,
+    "detail": 276.83660218792335
+  },
+  {
+    "scene_id": 170,
+    "split": "train",
+    "label": 1,
+    "brightness": 45.29522569444445,
+    "detail": 23.82509757851106
+  },
+  {
+    "scene_id": 170,
+    "split": "train",
+    "label": 2,
+    "brightness": 159.44479166666667,
+    "detail": 23.190586687091457
+  },
+  {
+    "scene_id": 171,
+    "split": "validation",
+    "label": 0,
+    "brightness": 73.00887152777777,
+    "detail": 206.90467269934916
+  },
+  {
+    "scene_id": 171,
+    "split": "validation",
+    "label": 1,
+    "brightness": 31.230798611111112,
+    "detail": 39.18111625774471
+  },
+  {
+    "scene_id": 171,
+    "split": "validation",
+    "label": 2,
+    "brightness": 73.00987847222223,
+    "detail": 15.832143983221819
+  },
+  {
+    "scene_id": 172,
+    "split": "test",
+    "label": 0,
+    "brightness": 81.51967013888888,
+    "detail": 158.944512138306
+  },
+  {
+    "scene_id": 172,
+    "split": "test",
+    "label": 1,
+    "brightness": 17.338628472222222,
+    "detail": 8.791686050172155
+  },
+  {
+    "scene_id": 172,
+    "split": "test",
+    "label": 2,
+    "brightness": 81.51630208333333,
+    "detail": 3.1402890377826753
+  },
+  {
+    "scene_id": 173,
+    "split": "validation",
+    "label": 0,
+    "brightness": 68.98616319444444,
+    "detail": 234.70987552004848
+  },
+  {
+    "scene_id": 173,
+    "split": "validation",
+    "label": 1,
+    "brightness": 9.409930555555556,
+    "detail": 5.994417354415477
+  },
+  {
+    "scene_id": 173,
+    "split": "validation",
+    "label": 2,
+    "brightness": 68.98307291666667,
+    "detail": 2.721821768143639
+  },
+  {
+    "scene_id": 174,
+    "split": "validation",
+    "label": 0,
+    "brightness": 176.68668402777777,
+    "detail": 182.56442993797316
+  },
+  {
+    "scene_id": 174,
+    "split": "validation",
+    "label": 1,
+    "brightness": 35.92559027777778,
+    "detail": 9.140926433485278
+  },
+  {
+    "scene_id": 174,
+    "split": "validation",
+    "label": 2,
+    "brightness": 176.68644097222221,
+    "detail": 2.4477884644641192
+  },
+  {
+    "scene_id": 175,
+    "split": "train",
+    "label": 0,
+    "brightness": 130.57104166666667,
+    "detail": 140.43138228071308
+  },
+  {
+    "scene_id": 175,
+    "split": "train",
+    "label": 1,
+    "brightness": 62.41401041666666,
+    "detail": 33.40235663370704
+  },
+  {
+    "scene_id": 175,
+    "split": "train",
+    "label": 2,
+    "brightness": 130.57244791666668,
+    "detail": 16.05534856855579
+  },
+  {
+    "scene_id": 176,
+    "split": "train",
+    "label": 0,
+    "brightness": 173.1045138888889,
+    "detail": 224.49955638723011
+  },
+  {
+    "scene_id": 176,
+    "split": "train",
+    "label": 1,
+    "brightness": 31.438368055555557,
+    "detail": 8.98334039216902
+  },
+  {
+    "scene_id": 176,
+    "split": "train",
+    "label": 2,
+    "brightness": 173.1065798611111,
+    "detail": 1.9089814864211203
+  },
+  {
+    "scene_id": 177,
+    "split": "train",
+    "label": 0,
+    "brightness": 120.636875,
+    "detail": 142.18785559408326
+  },
+  {
+    "scene_id": 177,
+    "split": "train",
+    "label": 1,
+    "brightness": 48.58253472222222,
+    "detail": 24.441907886550727
+  },
+  {
+    "scene_id": 177,
+    "split": "train",
+    "label": 2,
+    "brightness": 120.63373263888889,
+    "detail": 4.314992764997728
+  },
+  {
+    "scene_id": 178,
+    "split": "train",
+    "label": 0,
+    "brightness": 154.03206597222223,
+    "detail": 202.50957525008852
+  },
+  {
+    "scene_id": 178,
+    "split": "train",
+    "label": 1,
+    "brightness": 63.253940972222225,
+    "detail": 35.55944798286974
+  },
+  {
+    "scene_id": 178,
+    "split": "train",
+    "label": 2,
+    "brightness": 154.03208333333333,
+    "detail": 36.546815875158465
+  },
+  {
+    "scene_id": 179,
+    "split": "test",
+    "label": 0,
+    "brightness": 172.35480902777778,
+    "detail": 180.98929595636173
+  },
+  {
+    "scene_id": 179,
+    "split": "test",
+    "label": 1,
+    "brightness": 31.654097222222223,
+    "detail": 7.721666153285449
+  },
+  {
+    "scene_id": 179,
+    "split": "test",
+    "label": 2,
+    "brightness": 172.35671875,
+    "detail": 4.319075376320218
+  }
+]
