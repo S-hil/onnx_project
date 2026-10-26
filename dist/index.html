@@ -3,34 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Clarity • Camera visibility monitor</title>
+    <title>Camera Quality Monitor</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <a class="brand" href="./">Camera Quality Monitor</a
-      ><span class="pill">● Browser-local processing</span>
+      <a class="brand" href="./">Camera Quality Monitor</a>
+      <nav aria-label="Sections">
+        <a href="#stage">Input</a><a href="#results">Results</a
+        ><a href="#experiment">Evaluation</a><a href="#methods">Methods</a>
+      </nav>
     </header>
     <main>
       <div class="intro">
         <div>
-          <p class="eyebrow">COMPUTER VISION / ONNX BASELINE</p>
-          <h1>Camera visibility analysis.</h1>
+          <p class="eyebrow">Browser-based computer vision</p>
+          <h1>Camera quality monitor</h1>
           <p class="subtitle">
             An interpretable baseline and trained classifier for low-visibility
             detection.<br />Live acquisition · frame sampling · interpretable
             metrics · CSV telemetry.
           </p>
         </div>
-        <div class="badge">
-          RESEARCH PROTOTYPE<br /><strong>Camera visibility monitor</strong
-          ><br />ONNX Runtime Web / WASM · v0.3
-        </div>
       </div>
       <section class="workspace">
         <div class="viewer">
           <div class="sectionbar">
-            <span>01 / VIDEO INPUT</span
+            <span>Video source</span
             ><span id="filename">No video selected</span>
           </div>
           <div class="stage" id="stage">
@@ -54,8 +53,7 @@
               </div>
             </div>
             <div id="empty">
-              <div class="uploadicon">↥</div>
-              <h2>Inspect a live camera or recorded video</h2>
+              <h2>No video source selected</h2>
               <p>
                 Start your webcam for live measurements, or select a video.<br />Video
                 frames remain in browser memory. No audio capture.
@@ -80,7 +78,7 @@
           <progress id="progress" max="100" value="0" hidden></progress>
         </div>
         <aside>
-          <div class="sectionbar">02 / ANALYSIS SETTINGS</div>
+          <div class="sectionbar">Detection settings</div>
           <h2>Adjust warning sensitivity</h2>
           <p>
             Thresholds are starting points. Tune them to your camera and
@@ -111,8 +109,9 @@
               <option value="5">Every 5 seconds</option>
             </select></label
           >
-          <div class="setting-help">
-            <b>What do these numbers mean?</b>
+          <details class="setting-help">
+            <summary>Measurement definitions and threshold behavior</summary>
+
             <p>
               <strong>Brightness: 0–255.</strong> 0 is black; 255 is white.
               Higher means brighter, not necessarily better. An overexposed
@@ -131,7 +130,7 @@
               less-detailed scenes. Nothing here changes camera exposure or
               focus.
             </p>
-          </div>
+          </details>
           <div class="presets">
             <button class="secondary" id="presetTolerant">Fewer warnings</button
             ><button class="secondary" id="presetDefault">Reset defaults</button
@@ -143,8 +142,9 @@
             Defaults: brightness 45, detail 60. These are starting values, not
             validated quality standards.
           </p>
-          <div class="calibration">
-            <h3>Set a clear-scene reference</h3>
+          <details class="calibration">
+            <summary>Calibrate from a clear scene</summary>
+
             <p>
               Show a scene you judge well-lit and in focus. Let at least 5 live
               samples collect, then use the button below. For video, the last 10
@@ -159,7 +159,7 @@
               or validated calibration. Do not use a dark or blurred scene as
               your reference.
             </p>
-          </div>
+          </details>
           <div class="note">
             Brightness uses average weighted RGB (0–255). Edge detail uses
             Laplacian variance at a fixed 320-pixel analysis width. Low detail
@@ -212,11 +212,11 @@
           score without any change in the image.
         </p>
       </section>
-      <section class="results">
+      <section class="results" id="results">
         <div class="resultheading">
           <div>
-            <p class="eyebrow">03 / VISIBILITY REPORT</p>
-            <h2>Temporal quality telemetry.</h2>
+            <p class="eyebrow">Sample history</p>
+            <h2>Measurements and warnings</h2>
           </div>
           <button class="secondary" id="export" disabled>Export CSV ↓</button>
         </div>
@@ -253,8 +253,8 @@
         </div>
       </section>
       <section class="experiment" id="experiment">
-        <p class="eyebrow">TRAINED MODEL / EXPERIMENT 01</p>
-        <h2>Learning a visibility decision boundary.</h2>
+        <p class="eyebrow">Synthetic-data experiment</p>
+        <h2>Classifier evaluation</h2>
         <p class="experiment-warning">
           Synthetic test scenes only. This experiment demonstrates the training
           and deployment pipeline; its accuracy does not estimate performance on
@@ -273,12 +273,12 @@
           >
         </p>
       </section>
-      <section class="technical">
-        <p class="eyebrow">04 / ENGINEERING NOTES</p>
-        <h2>From pixels to an interpretable signal.</h2>
+      <section class="technical" id="methods">
+        <p class="eyebrow">Implementation</p>
+        <h2>Methods and limitations</h2>
         <p class="subtitle">
-          Portfolio research prototype exploring camera-quality observability
-          for surgical-vision workflows. A webcam provides an accessible
+          This experiment measures full-frame brightness and edge detail to flag
+          potentially degraded video. A webcam provides an accessible
           engineering demonstration; it does not reproduce endoscopic imaging
           conditions.
         </p>
@@ -356,8 +356,9 @@
             <p>
               Report per-condition precision, recall, false alarms per minute,
               event detection delay, and performance by camera and lighting.
-              Measure p50/p95 compute time separately from end-to-end delay. No
-              dataset-level results have been measured yet.
+              Measure p50/p95 compute time separately from end-to-end delay.
+              Synthetic results are reported above; real-data performance has
+              not been measured.
             </p>
           </article>
           <article>
@@ -378,7 +379,7 @@
           </article>
         </div>
         <div class="demoGuide">
-          <h3>Interview walkthrough</h3>
+          <h3>Manual test procedure</h3>
           <p>
             1. Start the camera and show a detailed, well-lit scene. 2. Reduce
             illumination to inspect brightness changes. 3. Move an object close
@@ -398,7 +399,7 @@
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/stop"
             >Media-track lifecycle / MDN</a
-          >. Independent portfolio project; no Andromeda Surgical affiliation or
+          >. Independent research project; no Andromeda Surgical affiliation or
           clinical validation is implied.
         </p>
       </section>

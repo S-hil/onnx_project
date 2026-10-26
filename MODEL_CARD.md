@@ -2,7 +2,7 @@
 
 ## Intended use
 
-Portfolio demonstration of supervised training, source-group splitting, ONNX export, parity validation, browser inference, and transparent evaluation. Not a clinical tool. Not trained on surgical footage. No company affiliation is implied.
+Research experiment in supervised training, source-group splitting, ONNX export, parity validation, browser inference, and transparent evaluation. Not a clinical tool. Not trained on surgical footage. No company affiliation is implied.
 
 ## Model
 
