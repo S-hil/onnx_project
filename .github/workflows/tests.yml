@@ -1,0 +1,20 @@
+name: Verify baseline
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements-dev.txt
+      - run: python scripts/export_model.py
+      - run: git diff --exit-code -- dist/models/visibility-baseline.onnx
+      - run: python tests/model_parity.py

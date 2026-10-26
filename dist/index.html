@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Clarity • Camera visibility monitor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./">Camera Quality Monitor</a
+      ><span class="pill">● Browser-local processing</span>
+    </header>
+    <main>
+      <div class="intro">
+        <div>
+          <p class="eyebrow">COMPUTER VISION / ONNX BASELINE</p>
+          <h1>Camera visibility analysis.</h1>
+          <p class="subtitle">
+            A deterministic computer-vision baseline for low-visibility
+            detection.<br />Live acquisition · frame sampling · interpretable
+            metrics · CSV telemetry.
+          </p>
+        </div>
+        <div class="badge">
+          RESEARCH PROTOTYPE<br /><strong>Camera visibility monitor</strong
+          ><br />ONNX Runtime Web / WASM · v0.3
+        </div>
+      </div>
+      <section class="workspace">
+        <div class="viewer">
+          <div class="sectionbar">
+            <span>01 / VIDEO INPUT</span
+            ><span id="filename">No video selected</span>
+          </div>
+          <div class="stage" id="stage">
+            <video id="video" controls playsinline hidden></video>
+            <div id="videoOverlay" class="video-overlay" hidden>
+              <div class="overlay-top">
+                <span>● LIVE / ONNX</span
+                ><span id="overlaySample">Waiting for sample</span>
+              </div>
+              <div class="overlay-bottom">
+                <div>
+                  <span class="overlay-label">SAMPLED VISIBILITY</span
+                  ><strong id="overlayCondition">Awaiting sample</strong
+                  ><span id="overlayMetrics">Brightness — · Detail —</span
+                  ><small>Full-frame heuristic · not spatial detection</small>
+                </div>
+                <div class="overlay-score">
+                  <strong id="overlayScore">—</strong><span>/ 100</span>
+                </div>
+              </div>
+            </div>
+            <div id="empty">
+              <div class="uploadicon">↥</div>
+              <h2>Inspect a live camera or recorded video</h2>
+              <p>
+                Start your webcam for live measurements, or select a video.<br />Video
+                frames remain in browser memory. No audio capture.
+              </p>
+              <label for="file" class="button">Choose video</label>
+            </div>
+          </div>
+          <div class="actions">
+            <input type="file" accept="video/*" id="file" /><button id="camera">
+              Start live camera</button
+            ><button class="secondary" id="stopCamera" hidden>
+              Stop camera</button
+            ><label for="file" class="button secondary">Select video</label
+            ><button id="analyze" disabled>Analyze video →</button
+            ><button class="secondary" id="demo">Try synthetic demo</button
+            ><button class="secondary" id="cancel" hidden>Cancel</button>
+          </div>
+          <p id="status" role="status" aria-live="polite">
+            Start the live camera, select a video, or explore synthetic
+            telemetry.
+          </p>
+          <progress id="progress" max="100" value="0" hidden></progress>
+        </div>
+        <aside>
+          <div class="sectionbar">02 / ANALYSIS SETTINGS</div>
+          <h2>Adjust warning sensitivity</h2>
+          <p>
+            Thresholds are starting points. Tune them to your camera and
+            lighting.
+          </p>
+          <label class="setting"
+            >Minimum brightness <output id="brightnessValue">45</output
+            ><input
+              id="brightness"
+              type="range"
+              min="5"
+              max="150"
+              value="45" /></label
+          ><label class="setting"
+            >Minimum edge detail <output id="detailValue">60</output
+            ><input
+              id="detail"
+              type="range"
+              min="5"
+              max="300"
+              value="60" /></label
+          ><label class="setting"
+            >Sampling interval
+            <select id="interval">
+              <option value="0.5">Every 0.5 seconds</option>
+              <option value="1" selected>Every second</option>
+              <option value="2">Every 2 seconds</option>
+              <option value="5">Every 5 seconds</option>
+            </select></label
+          >
+          <div class="setting-help">
+            <b>What do these numbers mean?</b>
+            <p>
+              <strong>Brightness: 0–255.</strong> 0 is black; 255 is white.
+              Higher means brighter, not necessarily better. An overexposed
+              scene can still lose useful information.
+            </p>
+            <p>
+              <strong>Edge detail: no universal scale.</strong> Higher means
+              more rapid pixel changes. Low values may indicate blur or a
+              naturally smooth scene. Noise can produce high values.
+            </p>
+            <p>
+              <strong
+                >The sliders set warning cutoffs, not camera settings.</strong
+              >
+              Raise a cutoff to warn more often. Lower it to tolerate darker or
+              less-detailed scenes. Nothing here changes camera exposure or
+              focus.
+            </p>
+          </div>
+          <div class="presets">
+            <button class="secondary" id="presetTolerant">Fewer warnings</button
+            ><button class="secondary" id="presetDefault">Reset defaults</button
+            ><button class="secondary" id="presetSensitive">
+              More warnings
+            </button>
+          </div>
+          <p id="settingsHelp" class="helper" role="status">
+            Defaults: brightness 45, detail 60. These are starting values, not
+            validated quality standards.
+          </p>
+          <div class="calibration">
+            <h3>Set a clear-scene reference</h3>
+            <p>
+              Show a scene you judge well-lit and in focus. Let at least 5 live
+              samples collect, then use the button below. For video, the last 10
+              analyzed samples must represent a clear scene.
+            </p>
+            <button class="secondary" id="calibrate">
+              Use recent clear samples
+            </button>
+            <p>
+              This sets each cutoff to 70% of its median in the latest 5–10
+              measured samples. It is a convenient starting point, not a learned
+              or validated calibration. Do not use a dark or blurred scene as
+              your reference.
+            </p>
+          </div>
+          <div class="note">
+            Brightness uses average weighted RGB (0–255). Edge detail uses
+            Laplacian variance at a fixed 320-pixel analysis width. Low detail
+            can reflect blur or a naturally smooth scene.
+          </div>
+        </aside>
+      </section>
+      <div class="runtimebar">
+        <b>ONNX EXECUTION</b
+        ><span id="runtimeStatus" role="status"
+          >Initializing local WASM runtime…</span
+        >
+      </div>
+      <section class="telemetry">
+        <div><span>INPUT / MODE</span><strong id="mode">Idle</strong></div>
+        <div>
+          <span>LATEST BRIGHTNESS</span
+          ><strong id="currentBrightness">—</strong>
+        </div>
+        <div>
+          <span>LATEST DETAIL</span><strong id="currentDetail">—</strong>
+        </div>
+        <div>
+          <span>METRIC COMPUTE TIME</span><strong id="latency">—</strong>
+        </div>
+        <div>
+          <span>CURRENT CONDITION</span
+          ><strong id="condition">Awaiting input</strong>
+        </div>
+      </section>
+      <p class="muted">
+        Compute time measures resize, pixel readback, and metric calculation
+        only; it excludes acquisition, decoding, rendering, and scheduling. Live
+        sampling uses the selected interval, not camera frame rate.
+      </p>
+      <section class="reading-guide">
+        <h3>Read the results at a glance</h3>
+        <p id="readingHelp" role="status">
+          Start the camera or analyze a video to get an explanation of the
+          latest sample.
+        </p>
+        <p>
+          <b>100:</b> both measurements meet your chosen cutoffs; it does not
+          guarantee a clear view. <b>50:</b> the weaker measurement is about
+          half its cutoff. <b>0:</b> at least one measured signal is zero. Amber
+          means at least one cutoff was missed. A higher cutoff can lower the
+          score without any change in the image.
+        </p>
+      </section>
+      <section class="results">
+        <div class="resultheading">
+          <div>
+            <p class="eyebrow">03 / VISIBILITY REPORT</p>
+            <h2>Temporal quality telemetry.</h2>
+          </div>
+          <button class="secondary" id="export" disabled>Export CSV ↓</button>
+        </div>
+        <div class="stats">
+          <div>
+            <span>AVERAGE QUALITY SCORE</span><strong id="score">—</strong
+            ><small>Heuristic · 0–100</small>
+          </div>
+          <div>
+            <span>FLAGGED SAMPLES</span><strong id="flagged">—</strong
+            ><small>Below a configured threshold</small>
+          </div>
+          <div>
+            <span>SAMPLES ANALYZED</span><strong id="count">—</strong
+            ><small id="source">Awaiting video</small>
+          </div>
+        </div>
+        <div class="chartwrap">
+          <canvas
+            id="chart"
+            height="160"
+            aria-label="Quality score over time"
+            role="img"
+          ></canvas>
+          <p id="chartnote">
+            Your quality timeline will appear here after analysis.
+          </p>
+        </div>
+        <h3>Moments to review <span id="reviewcount"></span></h3>
+        <div id="moments">
+          <p class="muted">
+            Flagged samples will appear here. Select a moment to seek to it.
+          </p>
+        </div>
+      </section>
+      <section class="technical">
+        <p class="eyebrow">04 / ENGINEERING NOTES</p>
+        <h2>From pixels to an interpretable signal.</h2>
+        <p class="subtitle">
+          Portfolio research prototype exploring camera-quality observability
+          for surgical-vision workflows. A webcam provides an accessible
+          engineering demonstration; it does not reproduce endoscopic imaging
+          conditions.
+        </p>
+        <div class="pipeline">
+          <span>01 · Acquire<br /><b>MediaStream / video file</b></span
+          ><span>02 · Normalize<br /><b>320 px wide, preserve aspect</b></span
+          ><span>03 · Measure<br /><b>Luma proxy + Laplacian</b></span
+          ><span>04 · ONNX inference<br /><b>WASM scoring → telemetry</b></span>
+        </div>
+        <div class="techgrid">
+          <article>
+            <h3>01 / Photometric signal</h3>
+            <code
+              >Y′ = 0.2126 R′ + 0.7152 G′ + 0.0722 B′<br />B = mean(Y′)</code
+            >
+            <p>
+              Weighted gamma-encoded RGB is used as a luma-like proxy, not
+              physical scene luminance. Mean brightness summarizes exposure
+              across the full frame; local dark regions can be hidden by bright
+              areas or specular highlights.
+            </p>
+          </article>
+          <article>
+            <h3>02 / Spatial detail signal</h3>
+            <code
+              >L(x,y) = Y′(x−1,y) + Y′(x+1,y)<br />+ Y′(x,y−1) + Y′(x,y+1) −
+              4Y′(x,y)<br />D = mean(L²) − mean(L)²</code
+            >
+            <p>
+              Four-neighbor Laplacian variance over interior pixels measures
+              high-frequency detail. Blur can reduce it; sensor noise, texture,
+              and compression can increase it. Analysis width is fixed for more
+              consistent comparisons.
+            </p>
+          </article>
+          <article>
+            <h3>03 / Transparent decision rule</h3>
+            <code
+              >Q = round(100 × min(1, B / Tᵦ, D / Tᴅ))<br />dark = B &lt; Tᵦ<br />low_detail
+              = D &lt; Tᴅ</code
+            >
+            <p>
+              The weaker normalized signal limits the score. Defaults Tᵦ = 45
+              and Tᴅ = 60 are illustrative and uncalibrated. The ONNX graph
+              executes Div → ReduceMin → Clip → Mul on float32 tensors: metrics
+              [N,2], thresholds [2], scores [N]. Scores are rounded for display.
+              Q is a heuristic, not model confidence or a diagnostic result.
+            </p>
+          </article>
+          <article>
+            <h3>04 / Runtime & resource lifecycle</h3>
+            <p>
+              Vanilla JavaScript ES modules, Canvas 2D pixel extraction,
+              Float64Array grayscale buffer, and a linear-time O(W×H) metric
+              pass. ONNX Runtime Web 1.20.1 executes the scoring graph with a
+              single WASM thread. A startup check requires score 50 for input
+              [90,30] at thresholds [45,60]. Live acquisition requests video
+              only through getUserMedia. Stop camera releases every media track;
+              hiding or leaving the page also stops acquisition.
+            </p>
+            <p>
+              Live sessions retain at most 3,600 samples, then stop. Raw images
+              are not recorded. File analysis caps work at 20,000 samples.
+              Downloads contain numeric telemetry only.
+            </p>
+          </article>
+          <article>
+            <h3>05 / Evaluation protocol — proposed</h3>
+            <p>
+              Create independently annotated clear / dark / blurred / occluded
+              clips. Split by source video or capture session to avoid frame
+              leakage. Tune thresholds on a development split, then freeze them
+              before held-out testing.
+            </p>
+            <p>
+              Report per-condition precision, recall, false alarms per minute,
+              event detection delay, and performance by camera and lighting.
+              Measure p50/p95 compute time separately from end-to-end delay. No
+              dataset-level results have been measured yet.
+            </p>
+          </article>
+          <article>
+            <h3>06 / Failure modes & next experiment</h3>
+            <p>
+              A sharp obstruction can score highly. Smooth clear scenes can
+              trigger low-detail flags. Auto-exposure, motion, specular
+              reflections, cropping, and sparse sampling can distort results.
+              There is no temporal smoothing or semantic obstruction detector.
+            </p>
+            <p>
+              Next experiment: train an obstruction classifier on licensed,
+              labeled research data; export to ONNX; run parity and latency
+              checks against its source model; compare held-out results with
+              this baseline. The current ONNX graph implements threshold
+              normalization and scoring. A learned classifier remains future
+              work.
+            </p>
+          </article>
+        </div>
+        <div class="demoGuide">
+          <h3>Interview walkthrough</h3>
+          <p>
+            1. Start the camera and show a detailed, well-lit scene. 2. Reduce
+            illumination to inspect brightness changes. 3. Move an object close
+            to the lens to explore detail loss. 4. Adjust thresholds and explain
+            false positives. 5. Stop acquisition and export timestamped
+            telemetry. These manipulations illustrate signal behavior, not
+            validated detection performance.
+          </p>
+        </div>
+        <p class="muted">
+          Implementation references:
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia"
+            >Camera acquisition / MDN</a
+          >
+          ·
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/stop"
+            >Media-track lifecycle / MDN</a
+          >. Independent portfolio project; no Andromeda Surgical affiliation or
+          clinical validation is implied.
+        </p>
+      </section>
+      <footer>
+        Built for exploration. Not validated for clinical decisions or surgical
+        guidance. Deterministic scoring runs in ONNX Runtime Web. No trained
+        surgical model is included.
+      </footer>
+    </main>
+    <script src="vendor/ort.min.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
